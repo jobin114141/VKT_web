@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Services Gateway | VKT Logistics LLP</title>
+
+    <!-- Tailwind CSS with Forms and Container Queries Plugins -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Tailwind Configuration script -->
+    <script src="script.js"></script>
+
+        <!-- Google Fonts Preconnect to prevent FOUT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=block" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet" />
+
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-surface text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-container-high h-20 transition-all duration-300">
+        <div class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-full">
+            <a href="index.html"
+                class="flex items-center gap-3 hover:scale-[1.02] active:scale-[0.98] transition-transform duration-300">
+                <img alt="VKT Logistics" class="h-9 w-auto object-contain" src="assets/logo_emblem.png" />
+                <span class="font-headline-md text-headline-md text-secondary tracking-wide font-normal"><span class="font-bold text-primary">VKT</span> Logistics</span>
+            </a>
+            <div class="hidden xl:flex items-center gap-4 2xl:gap-md">
+                <a class="text-secondary hover:text-primary transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider"
+                    href="index.html">Home</a>
+                <a class="text-secondary hover:text-primary transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider"
+                    href="about.html">About Us</a>
+                <a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md uppercase tracking-wider"
+                    href="services.html">Services</a>
+                <a class="text-secondary hover:text-primary transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider"
+                    href="logistics.html">Logistics</a>
+                <a class="text-secondary hover:text-primary transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider"
+                    href="holidays.html">Predator Holidays</a>
+                <a class="text-secondary hover:text-primary transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider"
+                    href="investors.html">Investors</a>
+                <a class="text-secondary hover:text-primary transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider"
+                    href="contact.html">Contact</a>
+            </div>
+            <div class="flex items-center gap-md">
+                <button onclick="toggleMobileMenu()"
+                    class="xl:hidden flex items-center justify-center p-2 text-primary focus:outline-none"
+                    aria-label="Toggle Menu">
+                    <span id="hamburger-icon" class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu"
+        class="fixed inset-y-0 right-0 z-40 w-full sm:w-80 bg-surface-container-lowest border-l border-surface-container-high shadow-2xl flex flex-col hidden pt-20 transition-all duration-300 transform translate-x-full">
+        <div class="flex flex-col p-gutter space-y-4 overflow-y-auto h-full">
+            <a onclick="toggleMobileMenu()"
+                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
+                href="index.html">Home</a>
+            <a onclick="toggleMobileMenu()"
+                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
+                href="about.html">About Us</a>
+            <a onclick="toggleMobileMenu()"
+                class="text-primary font-bold border-b border-surface-container-high py-3 font-label-md text-label-md block"
+                href="services.html">Services</a>
+            <a onclick="toggleMobileMenu()"
+                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
+                href="logistics.html">Logistics</a>
+            <a onclick="toggleMobileMenu()"
+                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
+                href="holidays.html">Predator Holidays</a>
+            <a onclick="toggleMobileMenu()"
+                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
+                href="investors.html">Investors</a>
+            <a onclick="toggleMobileMenu()"
+                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
+                href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative bg-surface overflow-hidden py-12 md:py-[100px]">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg relative z-10">
+                <div class="max-w-4xl space-y-md">
+                    <span class="font-label-md text-label-md text-primary tracking-widest block mb-sm">OUR
+                        SERVICES</span>
+                    <h1 class="font-display-lg text-3xl md:text-4xl lg:text-display-lg text-primary leading-tight">
+                        Integrated Logistics &amp;<br class="hidden sm:inline" /> Mobility Solutions
+                    </h1>
+                    <p class="font-body-lg text-body-lg text-secondary max-w-3xl leading-relaxed">
+                        VKT Logistics LLP operates across two core business divisions — Logistics and Travel Mobility —
+                        delivering dependable transportation infrastructure and customer-focused movement solutions
+                        across India.
+                    </p>
+                    <p class="font-body-md text-body-md text-secondary/80 max-w-2xl leading-relaxed">
+                        With nearly two decades of operational experience, we combine fleet capabilities, logistics
+                        expertise, and travel operations to support businesses, institutions, and individuals with
+                        structured mobility services.
+                    </p>
+                    <div class="flex flex-wrap gap-md pt-sm">
+                        <a href="#divisions"
+                            class="bg-primary-container text-white px-6 md:px-xl py-3 rounded hover:shadow-lg transition-all font-label-md text-label-md uppercase tracking-wider font-bold">
+                            Explore Divisions
+                        </a>
+                        <a href="contact.html"
+                            class="border border-primary text-primary px-6 md:px-xl py-3 rounded hover:bg-primary/5 transition-all font-label-md text-label-md uppercase tracking-wider font-bold">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Decorative background elements -->
+            <div class="absolute right-0 top-0 w-1/3 h-full hidden lg:block opacity-5 pointer-events-none">
+                <span
+                    class="material-symbols-outlined text-[350px] text-primary absolute -right-20 top-1/2 -translate-y-1/2"
+                    data-icon="hub">hub</span>
+            </div>
+        </section>
+
+        <!-- Logistics Division Section -->
+        <section id="logistics-division"
+            class="py-12 md:py-xl bg-white border-t border-b border-surface-container-high relative overflow-hidden">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-start">
+
+                    <!-- Left Panel (4 cols) -->
+                    <div class="lg:col-span-4 space-y-md lg:sticky lg:top-24">
+                        <div class="flex items-center gap-sm">
+                            <div
+                                class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-2xl"
+                                    data-icon="local_shipping">local_shipping</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-primary font-bold">Industrial Freight
+                                &amp; Logistics</h2>
+                        </div>
+                        <span
+                            class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/20 font-label-md">
+                            99.8% On-Time Delivery
+                        </span>
+
+                        <p class="font-body-lg text-body-lg text-primary font-semibold leading-relaxed">
+                            Reliable logistics operations designed to support commercial supply chains, cargo
+                            transportation, and freight movement requirements.
+                        </p>
+
+                        <p class="font-body-md text-body-md text-secondary leading-relaxed">
+                            Our logistics division focuses on operational efficiency, structured transport planning, and
+                            dependable delivery infrastructure built to support businesses across multiple sectors.
+                        </p>
+
+                        <p class="font-body-md text-body-md text-secondary/80 leading-relaxed">
+                            Whether managing regional cargo movement or large-scale transportation requirements, VKT
+                            provides scalable logistics capabilities built for reliability and operational excellence.
+                        </p>
+
+                        <div class="pt-md">
+                            <a href="logistics.html"
+                                class="inline-flex items-center gap-xs bg-primary-container text-white px-6 md:px-xl py-3 rounded hover:bg-primary transition-all font-label-md text-label-md uppercase tracking-wider font-bold shadow-sm">
+                                Explore Logistics Solutions <span class="material-symbols-outlined text-sm"
+                                    data-icon="arrow_forward">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Panel (8 cols): Capabilities Grid -->
+                    <div class="lg:col-span-8">
+                        <span
+                            class="font-label-md text-label-md text-primary uppercase tracking-wider block font-bold mb-md">Key
+                            Solutions &amp; Capabilities</span>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+
+                            <!-- Road Freight -->
+                            <div
+                                class="bg-surface-container-low p-md rounded-xl border border-outline-variant hover:border-primary/30 hover:shadow-sm transition-all duration-300">
+                                <div class="flex items-center gap-xs mb-xs text-primary">
+                                    <span class="material-symbols-outlined text-xl"
+                                        data-icon="local_shipping">local_shipping</span>
+                                    <span class="font-semibold text-sm">Road Freight</span>
+                                </div>
+                                <p class="text-xs text-secondary leading-relaxed">High-capacity long-haul and secondary
+                                    shipping across major transit corridors.</p>
+                            </div>
+
+                            <!-- Cargo Handling & Distribution -->
+                            <div
+                                class="bg-surface-container-low p-md rounded-xl border border-outline-variant hover:border-primary/30 hover:shadow-sm transition-all duration-300">
+                                <div class="flex items-center gap-xs mb-xs text-primary">
+                                    <span class="material-symbols-outlined text-xl" data-icon="hub">hub</span>
+                                    <span class="font-semibold text-sm">Cargo &amp; Distribution</span>
+                                </div>
+                                <p class="text-xs text-secondary leading-relaxed">Professional cargo sorting, sorting
+                                    hubs, and last-mile delivery distribution.</p>
+                            </div>
+
+                            <!-- Fleet Operations -->
+                            <div
+                                class="bg-surface-container-low p-md rounded-xl border border-outline-variant hover:border-primary/30 hover:shadow-sm transition-all duration-300">
+                                <div class="flex items-center gap-xs mb-xs text-primary">
+                                    <span class="material-symbols-outlined text-xl"
+                                        data-icon="airport_shuttle">airport_shuttle</span>
+                                    <span class="font-semibold text-sm">Fleet Management</span>
+                                </div>
+                                <p class="text-xs text-secondary leading-relaxed">Dedicated assets with real-time GPS
+                                    telemetry and driver tracking.</p>
+                            </div>
+
+                            <!-- Warehousing Support -->
+                            <div
+                                class="bg-surface-container-low p-md rounded-xl border border-outline-variant hover:border-primary/30 hover:shadow-sm transition-all duration-300">
+                                <div class="flex items-center gap-xs mb-xs text-primary">
+                                    <span class="material-symbols-outlined text-xl" data-icon="domain">domain</span>
+                                    <span class="font-semibold text-sm">Warehousing &amp; Storage</span>
+                                </div>
+                                <p class="text-xs text-secondary leading-relaxed">Secure warehousing facilities
+                                    integrated directly with distribution networks.</p>
+                            </div>
+
+                            <!-- Corporate Supply Chain -->
+                            <div
+                                class="bg-surface-container-low p-md rounded-xl border border-outline-variant hover:border-primary/30 hover:shadow-sm transition-all duration-300">
+                                <div class="flex items-center gap-xs mb-xs text-primary">
+                                    <span class="material-symbols-outlined text-xl"
+                                        data-icon="settings_suggest">settings_suggest</span>
+                                    <span class="font-semibold text-sm">Supply Chain Integration</span>
+                                </div>
+                                <p class="text-xs text-secondary leading-relaxed">Custom logistics contracts tailored to
+                                    FMCG, retail, and manufacturing sectors.</p>
+                            </div>
+
+                            <!-- Dedicated Logistics Solutions -->
+                            <div
+                                class="bg-surface-container-low p-md rounded-xl border border-outline-variant hover:border-primary/30 hover:shadow-sm transition-all duration-300">
+                                <div class="flex items-center gap-xs mb-xs text-primary">
+                                    <span class="material-symbols-outlined text-xl"
+                                        data-icon="conveyor_belt">conveyor_belt</span>
+                                    <span class="font-semibold text-sm">Contract Logistics</span>
+                                </div>
+                                <p class="text-xs text-secondary leading-relaxed">Scheduled dedicated vehicles serving
+                                    recurring regional routes.</p>
+                            </div>
+
+                            <!-- PAN India Operations -->
+                            <div
+                                class="sm:col-span-2 bg-surface-container-low p-md rounded-xl border border-outline-variant hover:border-primary/30 hover:shadow-sm transition-all duration-300">
+                                <div class="flex items-center gap-xs mb-xs text-primary">
+                                    <span class="material-symbols-outlined text-xl" data-icon="map">map</span>
+                                    <span class="font-semibold text-sm">Pan-India Network</span>
+                                </div>
+                                <p class="text-xs text-secondary leading-relaxed">Seamless movement across state borders
+                                    with full regulatory compliance and integrated transit checkpoints.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Predator Holidays & Travel Mobility Section -->
+        <section id="holidays-division" class="py-12 md:py-xl bg-primary-container text-white relative overflow-hidden">
+            <!-- Background Glows -->
+            <div
+                class="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl pointer-events-none">
+            </div>
+
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-start">
+
+                    <!-- Left Panel (4 cols) -->
+                    <div class="lg:col-span-4 space-y-md lg:sticky lg:top-24">
+                        <div class="flex items-center gap-sm">
+                            <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white">
+                                <span class="material-symbols-outlined text-2xl"
+                                    data-icon="directions_bus">directions_bus</span>
+                            </div>
+                            <h2 class="font-headline-md text-headline-md text-white font-bold">Predator Holidays &amp;
+                                Travel Mobility</h2>
+                        </div>
+                        <span
+                            class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-medium bg-white/10 text-white border border-white/20 font-label-md">
+                            15+ Years Travel Planning
+                        </span>
+
+                        <p class="font-body-lg text-body-lg text-white font-semibold leading-relaxed">
+                            Structured travel experiences designed for comfort, convenience, and dependable passenger
+                            movement.
+                        </p>
+
+                        <p class="font-body-md text-body-md text-white/80 leading-relaxed">
+                            Predator Holidays delivers organized mobility services supporting leisure travel, corporate
+                            transportation, educational tours, and group movement requirements.
+                        </p>
+
+                        <p class="font-body-md text-body-md text-white/70 leading-relaxed">
+                            From corporate outings to holiday experiences, our travel division focuses on delivering
+                            well-managed journeys supported by experienced operational planning.
+                        </p>
+
+                        <div class="pt-md">
+                            <a href="holidays.html"
+                                class="inline-flex items-center gap-xs bg-white text-primary-container px-6 md:px-xl py-3 rounded hover:bg-surface-container transition-all font-label-md text-label-md uppercase tracking-wider font-bold shadow-sm">
+                                Explore Predator Holidays <span class="material-symbols-outlined text-sm"
+                                    data-icon="arrow_forward">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Panel (8 cols): Capabilities Grid -->
+                    <div class="lg:col-span-8">
+                        <span
+                            class="font-label-md text-label-md text-white uppercase tracking-wider block font-bold mb-md">Travel
+                            Services &amp; Sectors</span>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+
+                            <!-- Premium Bus Rental Services -->
+                            <div
+                                class="bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10 hover:shadow-sm transition-all duration-300">
+                                <div class="flex items-center gap-xs mb-xs text-white">
+                                    <span class="material-symbols-outlined text-xl"
+                                        data-icon="directions_bus">directions_bus</span>
+                                    <span class="font-semibold text-sm">Premium Bus Rental</span>
+                                </div>
+                                <p class="text-xs text-white/80 leading-relaxed">Luxury touring coaches, Volvo buses,
+                                    and Force Traveler rentals for safe group commutes.</p>
+                            </div>
+
+                            <!-- Corporate Mobility Solutions -->
+                            <div
+                                class="bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10 hover:shadow-sm transition-all duration-300">
+                                <div class="flex items-center gap-xs mb-xs text-white">
+                                    <span class="material-symbols-outlined text-xl" data-icon="business">business</span>
+                                    <span class="font-semibold text-sm">Corporate Commutes</span>
+                                </div>
+                                <p class="text-xs text-white/80 leading-relaxed">Scheduled employee shuttles and
+                                    executive transport for corporate offices and events.</p>
+                            </div>
+
+                            <!-- Family Holiday Packages -->
+                            <div
+                                class="bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10 hover:shadow-sm transition-all duration-300">
+                                <div class="flex items-center gap-xs mb-xs text-white">
+                                    <span class="material-symbols-outlined text-xl"
+                                        data-icon="family_restroom">family_restroom</span>
+                                    <span class="font-semibold text-sm">Family Holidays</span>
+                                </div>
+                                <p class="text-xs text-white/80 leading-relaxed">Custom itineraries with curated
+                                    lodging, sightseeing, and dedicated family vehicles.</p>
+                            </div>
+
+                            <!-- Group Excursions -->
+                            <div
+                                class="bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10 hover:shadow-sm transition-all duration-300">
+                                <div class="flex items-center gap-xs mb-xs text-white">
+                                    <span class="material-symbols-outlined text-xl" data-icon="groups">groups</span>
+                                    <span class="font-semibold text-sm">Group Travel</span>
+                                </div>
+                                <p class="text-xs text-white/80 leading-relaxed">Safe and comfortable travel logistics
+                                    for community gatherings, weddings, and events.</p>
+                            </div>
+
+                            <!-- Educational Travel Programs -->
+                            <div
+                                class="bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10 hover:shadow-sm transition-all duration-300">
+                                <div class="flex items-center gap-xs mb-xs text-white">
+                                    <span class="material-symbols-outlined text-xl" data-icon="school">school</span>
+                                    <span class="font-semibold text-sm">Study Tour Transport</span>
+                                </div>
+                                <p class="text-xs text-white/80 leading-relaxed">Managed school and college excursions
+                                    prioritizing high safety standards and timing.</p>
+                            </div>
+
+                            <!-- Taxi & Car Rental Services -->
+                            <div
+                                class="bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10 hover:shadow-sm transition-all duration-300">
+                                <div class="flex items-center gap-xs mb-xs text-white">
+                                    <span class="material-symbols-outlined text-xl"
+                                        data-icon="local_taxi">local_taxi</span>
+                                    <span class="font-semibold text-sm">Taxi &amp; Car Rentals</span>
+                                </div>
+                                <p class="text-xs text-white/80 leading-relaxed">Premium sedans, SUVs, and commuter vans
+                                    for executive travel or airport transfers.</p>
+                            </div>
+
+                            <!-- Customized Tour Planning -->
+                            <div
+                                class="sm:col-span-2 bg-white/5 p-md rounded-xl border border-white/10 hover:border-white/30 hover:bg-white/10 hover:shadow-sm transition-all duration-300">
+                                <div class="flex items-center gap-xs mb-xs text-white">
+                                    <span class="material-symbols-outlined text-xl"
+                                        data-icon="travel_explore">travel_explore</span>
+                                    <span class="font-semibold text-sm">Custom Tours</span>
+                                </div>
+                                <p class="text-xs text-white/80 leading-relaxed">Tailor-made route planning, sightseeing
+                                    schedules, and complete travel logistics management.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Supporting Industries Section -->
+        <section class="py-12 md:py-xl bg-gradient-to-b from-white to-surface-container-low/30 overflow-hidden">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
+                <div class="text-center mb-xl max-w-2xl mx-auto">
+                    <span
+                        class="text-primary-container font-label-sm text-label-sm uppercase tracking-widest block mb-xs">Markets
+                        Served</span>
+                    <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary">Supporting Industries &amp; Customer
+                        Segments</h2>
+                    <p class="text-secondary font-body-md">Our operations support a broad range of transportation and
+                        mobility requirements.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-xl">
+                    <!-- Business & Commercial -->
+                    <div
+                        class="bg-surface-container-low/40 backdrop-blur-sm p-6 sm:p-lg md:p-xl rounded-2xl border border-surface-container-high hover:border-primary/30 transition-all duration-300 relative group shadow-sm hover:shadow-md">
+                        <div class="flex items-start gap-md mb-lg">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-tr from-primary to-primary-container text-white rounded-xl flex items-center justify-center shadow-md shadow-primary/20 transform group-hover:scale-105 transition-all duration-300">
+                                <span class="material-symbols-outlined text-2xl"
+                                    data-icon="storefront">storefront</span>
+                            </div>
+                            <div>
+                                <h3 class="font-headline-md text-primary text-xl font-bold tracking-tight">Business
+                                    &amp; Commercial</h3>
+                                <p class="text-xs text-secondary font-medium mt-1">Freight flow &amp; enterprise
+                                    logistics integration</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+                            <!-- FMCG -->
+                            <div
+                                class="bg-white p-md rounded-xl border border-surface-container-high flex flex-col justify-between hover:border-primary-container hover:-translate-y-1 hover:shadow-md transition-all duration-300 group border-l-4 border-l-transparent hover:border-l-primary-container relative overflow-hidden">
+                                <div class="flex items-center gap-sm mb-2">
+                                    <div
+                                        class="w-8 h-8 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center text-lg transition-all duration-300 group-hover:bg-emerald-500 group-hover:text-white">
+                                        <span class="material-symbols-outlined text-lg"
+                                            data-icon="shopping_bag">shopping_bag</span>
+                                    </div>
+                                    <span class="font-body-md font-bold text-primary text-sm">FMCG</span>
+                                </div>
+                                <p class="text-[11px] text-secondary leading-normal">Just-in-time distribution for
+                                    fast-moving consumer goods.</p>
+                            </div>
+                            <!-- Pharmaceuticals -->
+                            <div
+                                class="bg-white p-md rounded-xl border border-surface-container-high flex flex-col justify-between hover:border-primary-container hover:-translate-y-1 hover:shadow-md transition-all duration-300 group border-l-4 border-l-transparent hover:border-l-primary-container relative overflow-hidden">
+                                <div class="flex items-center gap-sm mb-2">
+                                    <div
+                                        class="w-8 h-8 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center text-lg transition-all duration-300 group-hover:bg-teal-500 group-hover:text-white">
+                                        <span class="material-symbols-outlined text-lg"
+                                            data-icon="medical_services">medical_services</span>
+                                    </div>
+                                    <span class="font-body-md font-bold text-primary text-sm">Pharmaceuticals</span>
+                                </div>
+                                <p class="text-[11px] text-secondary leading-normal">Time-critical delivery with strict
+                                    regulatory compliance.</p>
+                            </div>
+                            <!-- Industrial Goods -->
+                            <div
+                                class="bg-white p-md rounded-xl border border-surface-container-high flex flex-col justify-between hover:border-primary-container hover:-translate-y-1 hover:shadow-md transition-all duration-300 group border-l-4 border-l-transparent hover:border-l-primary-container relative overflow-hidden">
+                                <div class="flex items-center gap-sm mb-2">
+                                    <div
+                                        class="w-8 h-8 bg-amber-50 text-amber-600 rounded-full flex items-center justify-center text-lg transition-all duration-300 group-hover:bg-amber-500 group-hover:text-white">
+                                        <span class="material-symbols-outlined text-lg"
+                                            data-icon="construction">construction</span>
+                                    </div>
+                                    <span class="font-body-md font-bold text-primary text-sm">Industrial Goods</span>
+                                </div>
+                                <p class="text-[11px] text-secondary leading-normal">Heavy cargo and machinery transit
+                                    with secure flatbeds.</p>
+                            </div>
+                            <!-- Retail Distribution -->
+                            <div
+                                class="bg-white p-md rounded-xl border border-surface-container-high flex flex-col justify-between hover:border-primary-container hover:-translate-y-1 hover:shadow-md transition-all duration-300 group border-l-4 border-l-transparent hover:border-l-primary-container relative overflow-hidden">
+                                <div class="flex items-center gap-sm mb-2">
+                                    <div
+                                        class="w-8 h-8 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center text-lg transition-all duration-300 group-hover:bg-indigo-500 group-hover:text-white">
+                                        <span class="material-symbols-outlined text-lg"
+                                            data-icon="local_shipping">local_shipping</span>
+                                    </div>
+                                    <span class="font-body-md font-bold text-primary text-sm">Retail Distribution</span>
+                                </div>
+                                <p class="text-[11px] text-secondary leading-normal">Multi-stop distribution networks
+                                    for nationwide retail chains.</p>
+                            </div>
+                            <!-- Manufacturing -->
+                            <div
+                                class="bg-white p-md rounded-xl border border-surface-container-high flex flex-col justify-between hover:border-primary-container hover:-translate-y-1 hover:shadow-md transition-all duration-300 group border-l-4 border-l-transparent hover:border-l-primary-container relative overflow-hidden">
+                                <div class="flex items-center gap-sm mb-2">
+                                    <div
+                                        class="w-8 h-8 bg-cyan-50 text-cyan-600 rounded-full flex items-center justify-center text-lg transition-all duration-300 group-hover:bg-cyan-500 group-hover:text-white">
+                                        <span class="material-symbols-outlined text-lg"
+                                            data-icon="precision_manufacturing">precision_manufacturing</span>
+                                    </div>
+                                    <span class="font-body-md font-bold text-primary text-sm">Manufacturing</span>
+                                </div>
+                                <p class="text-[11px] text-secondary leading-normal">Raw material supply logistics
+                                    supporting continuous production.</p>
+                            </div>
+                            <!-- Commercial Supply Chains -->
+                            <div
+                                class="bg-white p-md rounded-xl border border-surface-container-high flex flex-col justify-between hover:border-primary-container hover:-translate-y-1 hover:shadow-md transition-all duration-300 group border-l-4 border-l-transparent hover:border-l-primary-container relative overflow-hidden">
+                                <div class="flex items-center gap-sm mb-2">
+                                    <div
+                                        class="w-8 h-8 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center text-lg transition-all duration-300 group-hover:bg-blue-500 group-hover:text-white">
+                                        <span class="material-symbols-outlined text-lg" data-icon="hub">hub</span>
+                                    </div>
+                                    <span class="font-body-md font-bold text-primary text-sm">Supply Chains</span>
+                                </div>
+                                <p class="text-[11px] text-secondary leading-normal">End-to-end multi-modal routing and
+                                    sorting coordination.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Passenger & Travel -->
+                    <div
+                        class="bg-surface-container-low/40 backdrop-blur-sm p-6 sm:p-lg md:p-xl rounded-2xl border border-surface-container-high hover:border-primary/30 transition-all duration-300 relative group shadow-sm hover:shadow-md">
+                        <div class="flex items-start gap-md mb-lg">
+                            <div
+                                class="w-14 h-14 bg-gradient-to-tr from-primary to-primary-container text-white rounded-xl flex items-center justify-center shadow-md shadow-primary/20 transform group-hover:scale-105 transition-all duration-300">
+                                <span class="material-symbols-outlined text-2xl" data-icon="groups">groups</span>
+                            </div>
+                            <div>
+                                <h3 class="font-headline-md text-primary text-xl font-bold tracking-tight">Passenger
+                                    &amp; Travel</h3>
+                                <p class="text-xs text-secondary font-medium mt-1">Organized mobility &amp; guest
+                                    transportation</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+                            <!-- Corporate Organizations -->
+                            <div
+                                class="bg-white p-md rounded-xl border border-surface-container-high flex flex-col justify-between hover:border-primary-container hover:-translate-y-1 hover:shadow-md transition-all duration-300 group border-l-4 border-l-transparent hover:border-l-primary-container relative overflow-hidden">
+                                <div class="flex items-center gap-sm mb-2">
+                                    <div
+                                        class="w-8 h-8 bg-sky-50 text-sky-600 rounded-full flex items-center justify-center text-lg transition-all duration-300 group-hover:bg-sky-500 group-hover:text-white">
+                                        <span class="material-symbols-outlined text-lg"
+                                            data-icon="corporate_fare">corporate_fare</span>
+                                    </div>
+                                    <span class="font-body-md font-bold text-primary text-sm">Corporates</span>
+                                </div>
+                                <p class="text-[11px] text-secondary leading-normal">Scheduled employee commutes and
+                                    executive transfers.</p>
+                            </div>
+                            <!-- Educational Institutions -->
+                            <div
+                                class="bg-white p-md rounded-xl border border-surface-container-high flex flex-col justify-between hover:border-primary-container hover:-translate-y-1 hover:shadow-md transition-all duration-300 group border-l-4 border-l-transparent hover:border-l-primary-container relative overflow-hidden">
+                                <div class="flex items-center gap-sm mb-2">
+                                    <div
+                                        class="w-8 h-8 bg-yellow-50 text-yellow-600 rounded-full flex items-center justify-center text-lg transition-all duration-300 group-hover:bg-yellow-500 group-hover:text-white">
+                                        <span class="material-symbols-outlined text-lg" data-icon="school">school</span>
+                                    </div>
+                                    <span class="font-body-md font-bold text-primary text-sm">Schools &amp;
+                                        Colleges</span>
+                                </div>
+                                <p class="text-[11px] text-secondary leading-normal">Safe, comfortable, and well-timed
+                                    institutional excursions.</p>
+                            </div>
+                            <!-- Families -->
+                            <div
+                                class="bg-white p-md rounded-xl border border-surface-container-high flex flex-col justify-between hover:border-primary-container hover:-translate-y-1 hover:shadow-md transition-all duration-300 group border-l-4 border-l-transparent hover:border-l-primary-container relative overflow-hidden">
+                                <div class="flex items-center gap-sm mb-2">
+                                    <div
+                                        class="w-8 h-8 bg-rose-50 text-rose-600 rounded-full flex items-center justify-center text-lg transition-all duration-300 group-hover:bg-rose-500 group-hover:text-white">
+                                        <span class="material-symbols-outlined text-lg"
+                                            data-icon="family_restroom">family_restroom</span>
+                                    </div>
+                                    <span class="font-body-md font-bold text-primary text-sm">Families</span>
+                                </div>
+                                <p class="text-[11px] text-secondary leading-normal">Private group charters for
+                                    weddings, holidays, and get-togethers.</p>
+                            </div>
+                            <!-- Tour Groups -->
+                            <div
+                                class="bg-white p-md rounded-xl border border-surface-container-high flex flex-col justify-between hover:border-primary-container hover:-translate-y-1 hover:shadow-md transition-all duration-300 group border-l-4 border-l-transparent hover:border-l-primary-container relative overflow-hidden">
+                                <div class="flex items-center gap-sm mb-2">
+                                    <div
+                                        class="w-8 h-8 bg-green-50 text-green-600 rounded-full flex items-center justify-center text-lg transition-all duration-300 group-hover:bg-green-500 group-hover:text-white">
+                                        <span class="material-symbols-outlined text-lg"
+                                            data-icon="directions_bus">directions_bus</span>
+                                    </div>
+                                    <span class="font-body-md font-bold text-primary text-sm">Tour Groups</span>
+                                </div>
+                                <p class="text-[11px] text-secondary leading-normal">Custom long-distance tour
+                                    itineraries across key holiday circuits.</p>
+                            </div>
+                            <!-- Business Travelers -->
+                            <div
+                                class="bg-white p-md rounded-xl border border-surface-container-high flex flex-col justify-between hover:border-primary-container hover:-translate-y-1 hover:shadow-md transition-all duration-300 group border-l-4 border-l-transparent hover:border-l-primary-container relative overflow-hidden">
+                                <div class="flex items-center gap-sm mb-2">
+                                    <div
+                                        class="w-8 h-8 bg-slate-100 text-slate-700 rounded-full flex items-center justify-center text-lg transition-all duration-300 group-hover:bg-slate-700 group-hover:text-white">
+                                        <span class="material-symbols-outlined text-lg"
+                                            data-icon="business_center">business_center</span>
+                                    </div>
+                                    <span class="font-body-md font-bold text-primary text-sm">Business Travelers</span>
+                                </div>
+                                <p class="text-[11px] text-secondary leading-normal">Premium chauffeured sedan fleet for
+                                    corporate executives.</p>
+                            </div>
+                            <!-- Event Transportation -->
+                            <div
+                                class="bg-white p-md rounded-xl border border-surface-container-high flex flex-col justify-between hover:border-primary-container hover:-translate-y-1 hover:shadow-md transition-all duration-300 group border-l-4 border-l-transparent hover:border-l-primary-container relative overflow-hidden">
+                                <div class="flex items-center gap-sm mb-2">
+                                    <div
+                                        class="w-8 h-8 bg-purple-50 text-purple-600 rounded-full flex items-center justify-center text-lg transition-all duration-300 group-hover:bg-purple-500 group-hover:text-white">
+                                        <span class="material-symbols-outlined text-lg" data-icon="event">event</span>
+                                    </div>
+                                    <span class="font-body-md font-bold text-primary text-sm">Event Organizers</span>
+                                </div>
+                                <p class="text-[11px] text-secondary leading-normal">Precision guest dispatching for
+                                    large conventions and events.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose VKT Section -->
+        <section class="py-12 md:py-xl bg-surface-container-low border-t border-b border-surface-container-high">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
+                <div class="text-center mb-xl max-w-2xl mx-auto">
+                    <span
+                        class="text-primary-container font-label-sm text-label-sm uppercase tracking-widest block mb-xs">VKT
+                        ADVANTAGE</span>
+                    <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary">Why Choose VKT Logistics LLP</h2>
+                    <p class="text-secondary font-body-md">Nearly two decades of transportation and mobility expertise.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-md">
+                    <!-- 1. Operational Experience -->
+                    <div
+                        class="bg-white p-md rounded-xl border border-outline-variant flex flex-col justify-between hover:border-primary transition-all duration-300 hover:shadow-sm">
+                        <div class="space-y-sm">
+                            <div
+                                class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-xl" data-icon="history">history</span>
+                            </div>
+                            <h4 class="font-headline-md text-primary text-base font-bold">Operational Experience</h4>
+                            <p class="text-xs text-secondary leading-relaxed">Nearly two decades of transportation and
+                                mobility expertise.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2. Structured Infrastructure -->
+                    <div
+                        class="bg-white p-md rounded-xl border border-outline-variant flex flex-col justify-between hover:border-primary transition-all duration-300 hover:shadow-sm">
+                        <div class="space-y-sm">
+                            <div
+                                class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-xl"
+                                    data-icon="account_tree">account_tree</span>
+                            </div>
+                            <h4 class="font-headline-md text-primary text-base font-bold">Structured Infrastructure</h4>
+                            <p class="text-xs text-secondary leading-relaxed">Fleet systems designed to support
+                                operational efficiency.</p>
+                        </div>
+                    </div>
+
+                    <!-- 3. Technology Enabled Operations -->
+                    <div
+                        class="bg-white p-md rounded-xl border border-outline-variant flex flex-col justify-between hover:border-primary transition-all duration-300 hover:shadow-sm">
+                        <div class="space-y-sm">
+                            <div
+                                class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-xl" data-icon="memory">memory</span>
+                            </div>
+                            <h4 class="font-headline-md text-primary text-base font-bold">Technology Enabled Operations
+                            </h4>
+                            <p class="text-xs text-secondary leading-relaxed">Modern operational tools supporting
+                                visibility and service management.</p>
+                        </div>
+                    </div>
+
+                    <!-- 4. Customer-Focused Service -->
+                    <div
+                        class="bg-white p-md rounded-xl border border-outline-variant flex flex-col justify-between hover:border-primary transition-all duration-300 hover:shadow-sm">
+                        <div class="space-y-sm">
+                            <div
+                                class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-xl"
+                                    data-icon="support_agent">support_agent</span>
+                            </div>
+                            <h4 class="font-headline-md text-primary text-base font-bold">Customer-Focused Service</h4>
+                            <p class="text-xs text-secondary leading-relaxed">Long-term partnerships built through
+                                reliability and consistent execution.</p>
+                        </div>
+                    </div>
+
+                    <!-- 5. Scalable Operations -->
+                    <div
+                        class="bg-white p-md rounded-xl border border-outline-variant flex flex-col justify-between hover:border-primary transition-all duration-300 hover:shadow-sm">
+                        <div class="space-y-sm">
+                            <div
+                                class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center text-primary">
+                                <span class="material-symbols-outlined text-xl"
+                                    data-icon="trending_up">trending_up</span>
+                            </div>
+                            <h4 class="font-headline-md text-primary text-base font-bold">Scalable Operations</h4>
+                            <p class="text-xs text-secondary leading-relaxed">Capabilities designed to support growth
+                                and evolving customer requirements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- General CTA Section -->
+        <section class="py-12 md:py-xl bg-primary-container text-white relative overflow-hidden">
+            <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none">
+            </div>
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg text-center space-y-md relative z-10">
+                <h2 class="font-display-lg text-3xl md:text-4xl lg:text-display-lg text-white font-bold leading-tight">Moving India. Growing
+                    Together.</h2>
+                <p class="font-body-lg text-body-lg text-white/80 max-w-3xl mx-auto leading-relaxed">
+                    At VKT Logistics LLP, our commitment remains focused on operational excellence, dependable service
+                    delivery, and building long-term customer relationships.
+                </p>
+                <p class="font-body-md text-body-md text-white/70 max-w-2xl mx-auto leading-relaxed">
+                    Whether supporting industrial freight movement or delivering premium mobility experiences, we
+                    continue building solutions designed around trust, efficiency, and reliability.
+                </p>
+                <div class="pt-md">
+                    <a href="contact.html"
+                        class="bg-white text-primary-container px-6 md:px-xl py-md rounded font-label-md text-label-md hover:bg-surface-container transition-all text-center inline-block uppercase tracking-wider font-bold">
+                        Contact Our Team
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white text-secondary border-t border-surface-container-high pt-12 md:pt-xl pb-6 md:pb-8 relative overflow-hidden">
+        <!-- Background Glows -->
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none">
+        </div>
+
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-xl">
+                <!-- Brand Column -->
+                <div class="space-y-sm lg:col-span-4">
+                    <div class="flex items-center gap-4">
+                        <img alt="VKT Logistics" class="h-10 w-auto object-contain" src="assets/logo_emblem.png" />
+                        <span class="font-headline-md text-headline-md font-bold text-primary tracking-tight">VKT
+                            LOGISTICS LLP</span>
+                    </div>
+                    <p class="text-primary font-bold text-xs uppercase tracking-wider">Moving India. Growing Together.
+                    </p>
+                    <p class="text-secondary text-sm leading-relaxed max-w-sm">
+                        Reliable logistics. Trusted partnerships. Scalable mobility solutions. Delivering transport and
+                        supply chain excellence across India since 2006.
+                    </p>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="flex flex-col gap-base lg:col-span-2">
+                    <div class="relative pb-2">
+                        <span class="font-label-md text-label-md text-primary uppercase tracking-wider block">Quick
+                            Links</span>
+                        <div class="absolute bottom-0 left-0 w-8 h-[2px] bg-primary"></div>
+                    </div>
+                    <div class="flex flex-col gap-3 pt-2">
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+                            href="index.html">
+                            <span
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Home</span>
+                        </a>
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+                            href="about.html">
+                            <span
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">About Us</span>
+                        </a>
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+                            href="services.html">
+                            <span
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Services</span>
+                        </a>
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+                            href="logistics.html">
+                            <span
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Logistics</span>
+                        </a>
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+                            href="holidays.html">
+                            <span
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Predator Holidays</span>
+                        </a>
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+                            href="investors.html">
+                            <span
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Investors</span>
+                        </a>
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+                            href="contact.html">
+                            <span
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Contact</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Divisions Column -->
+                <div class="flex flex-col gap-base lg:col-span-3">
+                    <div class="relative pb-2">
+                        <span class="font-label-md text-label-md text-primary uppercase tracking-wider block">Our
+                            Divisions</span>
+                        <div class="absolute bottom-0 left-0 w-8 h-[2px] bg-primary"></div>
+                    </div>
+                    <div class="flex flex-col gap-3 pt-2">
+                        <div class="text-secondary text-sm flex items-center gap-2">
+                            <span
+                                class="material-symbols-outlined text-base text-primary-container">local_shipping</span>
+                            <span>Industrial Freight & Cargo</span>
+                        </div>
+                        <div class="text-secondary text-sm flex items-center gap-2">
+                            <span
+                                class="material-symbols-outlined text-base text-primary-container">airport_shuttle</span>
+                            <span>Corporate Employee Mobility</span>
+                        </div>
+                        <div class="text-secondary text-sm flex items-center gap-2">
+                            <span
+                                class="material-symbols-outlined text-base text-primary-container">directions_bus</span>
+                            <span>Premium Fleet Solutions</span>
+                        </div>
+                        <div class="text-secondary text-sm flex items-center gap-2">
+                            <span class="material-symbols-outlined text-base text-primary-container">explore</span>
+                            <span>Predator Holidays (Leisure)</span>
+                        </div>
+                        <div class="text-secondary text-sm flex items-center gap-2">
+                            <span class="material-symbols-outlined text-base text-primary-container">domain</span>
+                            <span>Warehouse Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="flex flex-col gap-base lg:col-span-3">
+                    <div class="relative pb-2">
+                        <span class="font-label-md text-label-md text-primary uppercase tracking-wider block">Get In
+                            Touch</span>
+                        <div class="absolute bottom-0 left-0 w-8 h-[2px] bg-primary"></div>
+                    </div>
+                    <div class="space-y-sm text-sm pt-2">
+                        <div class="flex flex-col gap-1">
+                            <span class="font-semibold text-primary">Email:</span>
+                            <div
+                                class="flex items-center gap-2 text-secondary hover:text-primary transition-all duration-300">
+                                <span class="material-symbols-outlined text-base text-primary-container">mail</span>
+                                <a href="mailto:vktlogisticsllp@gmail.com"
+                                    class="hover:underline">vktlogisticsllp@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <span class="font-semibold text-primary">Phone:</span>
+                            <div
+                                class="flex items-center gap-2 text-secondary hover:text-primary transition-all duration-300">
+                                <span class="material-symbols-outlined text-base text-primary-container">call</span>
+                                <a href="tel:+917356697973" class="hover:underline">+91 73566 97973</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <span class="font-semibold text-primary">Headquarters:</span>
+                            <div class="flex items-start gap-2 text-secondary">
+                                <span
+                                    class="material-symbols-outlined text-base text-primary-container mt-0.5">location_on</span>
+                                <span>Aluva, Kochi, Kerala, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="mt-lg pt-md border-t border-surface-container flex flex-col sm:flex-row justify-between items-center gap-base">
+                <p class="text-secondary/60 text-sm">© 2026 VKT Logistics LLP. All Rights Reserved.</p>
+                <div class="flex gap-md">
+                    <a class="w-10 h-10 rounded-full border border-surface-container-high flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+                        href="#">
+                        <span class="material-symbols-outlined text-lg">public</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full border border-surface-container-high flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+                        href="mailto:vktlogisticsllp@gmail.com">
+                        <span class="material-symbols-outlined text-lg">mail</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full border border-surface-container-high flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+                        href="tel:+917356697973">
+                        <span class="material-symbols-outlined text-lg">call</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        window.toggleMobileMenu = function () {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('hamburger-icon');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                setTimeout(() => {
+                    menu.classList.remove('translate-x-full');
+                }, 10);
+                icon.textContent = 'close';
+            } else {
+                menu.classList.add('translate-x-full');
+                setTimeout(() => {
+                    menu.classList.add('hidden');
+                }, 300);
+                icon.textContent = 'menu';
+            }
+        };
+
+
+
+        // FAQ Accordion Toggle Function
+        window.toggleFaq = function (index) {
+            const content = document.getElementById(`faq-content-${index}`);
+            const icon = document.getElementById(`faq-icon-${index}`);
+
+            const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+            for (let i = 1; i <= 4; i++) {
+                const c = document.getElementById(`faq-content-${i}`);
+                const ic = document.getElementById(`faq-icon-${i}`);
+                if (c && ic) {
+                    c.style.maxHeight = '0px';
+                    ic.style.transform = 'rotate(0deg)';
+                    ic.textContent = 'add';
+                }
+            }
+
+            if (!isOpen) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.style.transform = 'rotate(45deg)';
+                icon.textContent = 'close';
+            }
+        };
+
+        // Simple scroll reveal effect
+        const observerOptions = {
+            rootMargin: '0px 0px 150px 0px',
+            threshold: 0.01
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('main > section:not(:first-of-type)').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+
+
+    </script>
+
+    
+
+
+    
+
+    
+    <!-- Premium WhatsApp Floating Button -->
+    <a href="https://wa.me/917356697973"
+        class="whatsapp-float group flex items-center" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <div class="flex items-center gap-3 bg-gradient-to-r from-[#25D366] to-[#128C7E] text-white px-5 py-3 rounded-full shadow-[0_8px_30px_rgb(37,211,102,0.4)] hover:shadow-[0_12px_40px_rgb(37,211,102,0.6)] transition-all duration-300 transform group-hover:-translate-y-1 border border-white/20 backdrop-blur-sm">
+            <div class="relative flex items-center justify-center">
+                <div class="absolute inset-0 bg-white rounded-full opacity-0 group-hover:animate-ping"></div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-6 h-6 relative z-10 drop-shadow" />
+            </div>
+            <span class="font-label-md font-bold text-sm tracking-wide pr-1">Chat with us</span>
+        </div>
+    </a>
+</body>
+
+</html>

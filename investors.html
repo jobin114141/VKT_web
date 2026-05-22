@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Investors | VKT Logistics LLP</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="script.js"></script>
+    <!-- Google Fonts Preconnect to prevent FOUT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&amp;display=block" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#b7c8e1",
+                        "error": "#ba1a1a",
+                        "inverse-surface": "#2d3133",
+                        "on-primary-container": "#7594ca",
+                        "on-primary": "#ffffff",
+                        "background": "#f7f9fb",
+                        "outline-variant": "#c4c6d0",
+                        "on-secondary-fixed-variant": "#38485d",
+                        "surface-variant": "#e0e3e5",
+                        "on-surface": "#191c1e",
+                        "surface-bright": "#f7f9fb",
+                        "tertiary": "#11181d",
+                        "surface-container-highest": "#e0e3e5",
+                        "tertiary-fixed-dim": "#c1c7cf",
+                        "surface-container-high": "#e6e8ea",
+                        "inverse-primary": "#a9c7ff",
+                        "on-secondary-fixed": "#0b1c30",
+                        "primary-fixed": "#d6e3ff",
+                        "on-surface-variant": "#43474f",
+                        "surface-tint": "#405f91",
+                        "inverse-on-surface": "#eff1f3",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#002b5b",
+                        "surface": "#f7f9fb",
+                        "on-tertiary-fixed": "#161c22",
+                        "on-secondary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#d8dadc",
+                        "on-tertiary-container": "#8d939b",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#a9c7ff",
+                        "on-background": "#191c1e",
+                        "on-secondary-container": "#54647a",
+                        "on-error": "#ffffff",
+                        "surface-container": "#eceef0",
+                        "secondary": "#505f76",
+                        "error-container": "#ffdad6",
+                        "primary": "#001736",
+                        "on-primary-fixed": "#001b3d",
+                        "tertiary-container": "#262c32",
+                        "tertiary-fixed": "#dde3eb",
+                        "secondary-fixed": "#d3e4fe",
+                        "secondary-container": "#d0e1fb",
+                        "surface-container-low": "#f2f4f6",
+                        "on-primary-fixed-variant": "#264778",
+                        "outline": "#747780",
+                        "on-tertiary-fixed-variant": "#41474e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "sm": "12px",
+                        "xs": "4px",
+                        "xl": "80px",
+                        "container-max": "1440px",
+                        "lg": "48px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "base": "8px",
+                        "md": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Montserrat"],
+                        "label-md": ["Montserrat"],
+                        "display-lg": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "headline-lg": ["Montserrat"],
+                        "body-md": ["Montserrat"],
+                        "label-sm": ["Montserrat"],
+                        "body-lg": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["24px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "1", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .roadmap-line {
+            background: repeating-linear-gradient(to bottom, #001736, #001736 4px, transparent 4px, transparent 8px);
+        }
+
+        /* 5-Year Growth Vision — animated timeline */
+        .vision-section {
+            background: linear-gradient(180deg, #f7f9fb 0%, #f2f4f6 45%, #eceef0 100%);
+        }
+
+        .vision-section::before,
+        .vision-section::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.35;
+            pointer-events: none;
+        }
+
+        .vision-section::before {
+            width: 420px;
+            height: 420px;
+            background: #d0e1fb;
+            top: -120px;
+            left: -80px;
+        }
+
+        .vision-section::after {
+            width: 360px;
+            height: 360px;
+            background: #a9c7ff;
+            bottom: -100px;
+            right: -60px;
+        }
+
+        .vision-card {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                box-shadow 0.4s ease, border-color 0.4s ease;
+        }
+
+        .vision-section.is-visible .vision-card {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .vision-section.is-visible .vision-card:nth-child(1) {
+            transition-delay: 0.15s;
+        }
+
+        .vision-section.is-visible .vision-card:nth-child(2) {
+            transition-delay: 0.35s;
+        }
+
+        .vision-section.is-visible .vision-card:nth-child(3) {
+            transition-delay: 0.55s;
+        }
+
+        .vision-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px -12px rgba(0, 23, 54, 0.18);
+            border-color: #405f91;
+        }
+
+        .vision-section.is-visible .vision-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .vision-node {
+            opacity: 0;
+            transform: scale(0.6);
+            transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .vision-section.is-visible .vision-node {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .vision-section.is-visible .vision-node:nth-child(1) {
+            transition-delay: 0.1s;
+        }
+
+        .vision-section.is-visible .vision-node:nth-child(2) {
+            transition-delay: 0.3s;
+        }
+
+        .vision-section.is-visible .vision-node:nth-child(3) {
+            transition-delay: 0.5s;
+        }
+
+        .vision-node-ring {
+            animation: visionPulse 2.5s ease-in-out infinite;
+        }
+
+        .vision-node.active .vision-node-ring {
+            animation: visionPulseActive 1.8s ease-in-out infinite;
+        }
+
+        @keyframes visionPulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.4;
+            }
+
+            50% {
+                transform: scale(1.15);
+                opacity: 0.15;
+            }
+        }
+
+        @keyframes visionPulseActive {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.6;
+            }
+
+            50% {
+                transform: scale(1.25);
+                opacity: 0.2;
+            }
+        }
+
+        .vision-track-line {
+            transform: scaleX(0);
+            transform-origin: left center;
+            transition: transform 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .vision-section.is-visible .vision-track-line {
+            transform: scaleX(1);
+        }
+
+        .vision-milestone {
+            opacity: 0;
+            transform: translateX(-10px);
+            transition: opacity 0.45s ease, transform 0.45s ease;
+        }
+
+        .vision-section.is-visible .vision-card .vision-milestone {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .vision-section.is-visible .vision-card:nth-child(1) .vision-milestone:nth-child(1) {
+            transition-delay: 0.3s;
+        }
+
+        .vision-section.is-visible .vision-card:nth-child(1) .vision-milestone:nth-child(2) {
+            transition-delay: 0.38s;
+        }
+
+        .vision-section.is-visible .vision-card:nth-child(1) .vision-milestone:nth-child(3) {
+            transition-delay: 0.46s;
+        }
+
+        .vision-section.is-visible .vision-card:nth-child(1) .vision-milestone:nth-child(4) {
+            transition-delay: 0.54s;
+        }
+
+        .vision-section.is-visible .vision-card:nth-child(2) .vision-milestone:nth-child(1) {
+            transition-delay: 0.5s;
+        }
+
+        .vision-section.is-visible .vision-card:nth-child(2) .vision-milestone:nth-child(2) {
+            transition-delay: 0.58s;
+        }
+
+        .vision-section.is-visible .vision-card:nth-child(2) .vision-milestone:nth-child(3) {
+            transition-delay: 0.66s;
+        }
+
+        .vision-section.is-visible .vision-card:nth-child(3) .vision-milestone:nth-child(1) {
+            transition-delay: 0.7s;
+        }
+
+        .vision-section.is-visible .vision-card:nth-child(3) .vision-milestone:nth-child(2) {
+            transition-delay: 0.78s;
+        }
+
+        .vision-section.is-visible .vision-card:nth-child(3) .vision-milestone:nth-child(3) {
+            transition-delay: 0.86s;
+        }
+
+        .vision-card:hover .vision-milestone {
+            transform: translateX(4px);
+        }
+
+        .vision-section.is-visible .vision-track-line {
+            background: linear-gradient(90deg, #001736 0%, #002b5b 50%, #405f91 100%);
+            background-size: 200% 100%;
+            animation: visionShimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes visionShimmer {
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .vision-vertical-line {
+            transform: scaleY(0);
+            transform-origin: top center;
+            transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .vision-section.is-visible .vision-vertical-line {
+            transform: scaleY(1);
+        }
+
+        .vision-header {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .vision-section.is-visible .vision-header {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            .vision-card,
+            .vision-node,
+            .vision-track-line,
+            .vision-milestone,
+            .vision-vertical-line,
+            .vision-header {
+                opacity: 1;
+                transform: none;
+                transition: none;
+                animation: none;
+            }
+
+            .vision-node-ring {
+                animation: none;
+            }
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            z-index: 60;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            background: #25D366;
+            color: #fff;
+            border-radius: 50%;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.08);
+            box-shadow: 0 6px 28px rgba(37, 211, 102, 0.55);
+        }
+
+        .whatsapp-float::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            background: #25D366;
+            opacity: 0.35;
+            animation: whatsappPulse 2s ease-out infinite;
+        }
+
+        @keyframes whatsappPulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.35;
+            }
+
+            100% {
+                transform: scale(1.35);
+                opacity: 0;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .whatsapp-float::before {
+                animation: none;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-container-high h-20 transition-all duration-300">
+        <div
+            class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-full">
+            <a href="index.html"
+                class="flex items-center gap-3 hover:scale-[1.02] active:scale-[0.98] transition-transform duration-300">
+                <img alt="VKT Logistics" class="h-9 w-auto object-contain" src="assets/logo_emblem.png" />
+                <span class="font-headline-md text-headline-md text-secondary tracking-wide font-normal"><span
+                        class="font-bold text-primary">VKT</span> Logistics</span>
+            </a>
+            <div class="hidden xl:flex items-center gap-4 2xl:gap-md">
+                <a class="text-secondary hover:text-primary transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider"
+                    href="index.html">Home</a>
+                <a class="text-secondary hover:text-primary transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider"
+                    href="about.html">About Us</a>
+                <a class="text-secondary hover:text-primary transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider"
+                    href="services.html">Services</a>
+                <a class="text-secondary hover:text-primary transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider"
+                    href="logistics.html">Logistics</a>
+                <a class="text-secondary hover:text-primary transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider"
+                    href="holidays.html">Predator Holidays</a>
+                <a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md uppercase tracking-wider"
+                    href="investors.html">Investors</a>
+                <a class="text-secondary hover:text-primary transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider"
+                    href="contact.html">Contact</a>
+            </div>
+            <div class="flex items-center gap-md">
+                <button onclick="toggleMobileMenu()"
+                    class="xl:hidden flex items-center justify-center p-2 text-primary focus:outline-none"
+                    aria-label="Toggle Menu">
+                    <span id="hamburger-icon" class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu"
+        class="fixed inset-y-0 right-0 z-40 w-full sm:w-80 bg-surface-container-lowest border-l border-surface-container-high shadow-2xl flex flex-col hidden pt-20 transition-all duration-300 transform translate-x-full">
+        <div class="flex flex-col p-gutter space-y-4 overflow-y-auto h-full">
+            <a onclick="toggleMobileMenu()"
+                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
+                href="index.html">Home</a>
+            <a onclick="toggleMobileMenu()"
+                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
+                href="about.html">About Us</a>
+            <a onclick="toggleMobileMenu()"
+                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
+                href="services.html">Services</a>
+            <a onclick="toggleMobileMenu()"
+                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
+                href="logistics.html">Logistics</a>
+            <a onclick="toggleMobileMenu()"
+                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
+                href="holidays.html">Predator Holidays</a>
+            <a onclick="toggleMobileMenu()"
+                class="text-primary font-bold border-b border-surface-container-high py-3 font-label-md text-label-md block"
+                href="investors.html">Investors</a>
+            <a onclick="toggleMobileMenu()"
+                class="text-secondary hover:text-primary py-3 font-label-md text-label-md block border-b border-surface-container-high transition-colors"
+                href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative bg-surface-container-lowest overflow-hidden">
+            <div
+                class="max-w-container-max mx-auto px-margin-mobile md:px-lg py-12 md:py-xl flex flex-col md:flex-row items-center gap-8 md:gap-xl relative z-10">
+                <div class="md:w-1/2 space-y-md">
+                    <span
+                        class="inline-block py-xs px-sm bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded uppercase tracking-wider">Investor
+                        Relations</span>
+                    <h1 class="font-display-lg text-3xl md:text-4xl lg:text-display-lg text-primary leading-tight">
+                        Investment Opportunity</h1>
+                    <p class="font-headline-md text-xl md:text-headline-md text-primary font-semibold">Invest in the
+                        Future of
+                        Mobility &amp; Logistics</p>
+                    <p class="font-body-lg text-body-lg text-secondary max-w-lg">VKT Logistics LLP is a fast-growing
+                        logistics and travel enterprise headquartered in Aluva with nearly two decades of operational
+                        experience. Established in 2006 and transitioned into an LLP in 2026, the company is entering a
+                        high-growth expansion phase.</p>
+                    <div class="flex flex-wrap gap-md pt-md">
+                        <a href="#investment-proposal"
+                            class="bg-primary text-on-primary px-6 md:px-lg py-3 md:py-md rounded font-label-md text-label-md hover:opacity-90 transition-all shadow-sm">View
+                            Investment Proposal</a>
+                        <a href="mailto:vktlogisticsllp@gmail.com"
+                            class="border border-outline text-primary px-6 md:px-lg py-3 md:py-md rounded font-label-md text-label-md hover:bg-surface-container transition-all">Contact
+                            Founders</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <div class="rounded-xl overflow-hidden border border-outline-variant shadow-2xl">
+                        <img alt="Logistics mapping and fleet planning" class="w-full h-auto object-cover"
+                            src="https://lh3.googleusercontent.com/aida/ADBb0uiy1fxS4BSjcoWCn2JJoUpI-mwtuRU8LIDvgYz57fV0nEEVDpKU-N8ImWx1dk3RQlV-nVJP68cLX2nc0jcml97Taoyqy67RCIHZoAlLhXImv0iygOir94Ni1CFGdFS4rkFGF18bcpLtbPwR-6FrjWKZX4AU-LFrvbtuEZotpXQdOeYFUyns40RlfnBQQV35cfQB9A72GsNDy19JMtK-eNUuRDZkHDzG3AutnQuOXkLuRqvbJ1oRcryZig">
+                    </div>
+                    <div
+                        class="absolute -bottom-base -left-base bg-white p-md border border-outline-variant shadow-lg rounded-lg max-w-[200px]">
+                        <p class="text-primary font-bold text-headline-md">₹2.6Cr</p>
+                        <p class="text-secondary font-label-sm text-label-sm">Current Raise Target</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Atmospheric background pattern -->
+            <div class="absolute top-0 right-0 w-1/3 h-full opacity-5 pointer-events-none">
+                <svg height="100%" preserveAspectRatio="none" viewBox="0 0 100 100" width="100%">
+                    <pattern height="10" id="grid" patternUnits="userSpaceOnUse" width="10">
+                        <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"></path>
+                    </pattern>
+                    <rect fill="url(#grid)" height="100" width="100"></rect>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Company Overview -->
+        <section class="py-12 md:py-xl bg-surface border-b border-outline-variant/50">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
+                <div class="max-w-4xl mx-auto space-y-md font-body-md text-body-md text-secondary leading-relaxed">
+                    <p>VKT Logistics LLP is a fast-growing logistics and travel enterprise headquartered in Aluva with
+                        nearly two decades of operational experience in cargo transportation, fleet operations, and
+                        travel services. Established in 2006 and transitioned into an LLP structure in 2026, the company
+                        is now entering a high-growth expansion phase focused on scaling both logistics and holidays
+                        divisions.</p>
+                    <p>Built on years of industry trust, recurring clients, and strong regional connectivity, VKT has
+                        evolved from a traditional transport operator into a scalable, technology-enabled mobility
+                        platform serving businesses and travelers across India.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Invest -->
+        <section class="py-12 md:py-xl bg-surface-container-low">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
+                <div class="text-center mb-8 md:mb-xl max-w-3xl mx-auto">
+                    <span
+                        class="inline-block py-xs px-sm bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded uppercase tracking-wider mb-sm">Why
+                        Invest</span>
+                    <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary">Why Invest in VKT Logistics
+                        LLP?</h2>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-xl items-start">
+                    <div class="space-y-md">
+                        <h3 class="font-headline-md text-xl md:text-headline-md text-primary flex items-center gap-sm">
+                            <span class="material-symbols-outlined text-primary">verified</span> Proven Industry
+                            Experience
+                        </h3>
+                        <p class="font-body-md text-body-md text-secondary">With almost 20 years of operations, VKT has
+                            built long-standing relationships with corporate clients across FMCG, pharmaceutical,
+                            industrial, retail, and e-commerce sectors. The company operates across major logistics
+                            corridors including Kochi, Chennai, Bangalore, Hyderabad, Mumbai, Delhi, Kolkata, and the
+                            North-East.</p>
+                        <p class="font-body-md text-body-md text-secondary">Unlike early-stage startups with untested
+                            models, VKT enters its growth phase with:</p>
+                    </div>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+                        <li
+                            class="flex items-start gap-sm p-md bg-surface-container-lowest border border-outline-variant rounded-lg">
+                            <span class="material-symbols-outlined text-primary text-xl">trending_up</span>
+                            <span class="font-label-md text-label-md text-primary">Existing revenue streams</span>
+                        </li>
+                        <li
+                            class="flex items-start gap-sm p-md bg-surface-container-lowest border border-outline-variant rounded-lg">
+                            <span class="material-symbols-outlined text-primary text-xl">groups</span>
+                            <span class="font-label-md text-label-md text-primary">Active customer demand</span>
+                        </li>
+                        <li
+                            class="flex items-start gap-sm p-md bg-surface-container-lowest border border-outline-variant rounded-lg">
+                            <span class="material-symbols-outlined text-primary text-xl">warehouse</span>
+                            <span class="font-label-md text-label-md text-primary">Operational infrastructure</span>
+                        </li>
+                        <li
+                            class="flex items-start gap-sm p-md bg-surface-container-lowest border border-outline-variant rounded-lg">
+                            <span class="material-symbols-outlined text-primary text-xl">local_shipping</span>
+                            <span class="font-label-md text-label-md text-primary">Established fleet networks</span>
+                        </li>
+                        <li
+                            class="flex items-start gap-sm p-md bg-surface-container-lowest border border-outline-variant rounded-lg sm:col-span-2">
+                            <span class="material-symbols-outlined text-primary text-xl">handshake</span>
+                            <span class="font-label-md text-label-md text-primary">Repeat corporate business</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dual Business Model -->
+        <section class="py-12 md:py-xl bg-surface-container-lowest">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
+                <div class="text-center mb-8 md:mb-xl">
+                    <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary mb-sm">Dual Business Model
+                    </h2>
+                    <p class="font-body-md text-body-md text-secondary max-w-2xl mx-auto">Two scalable divisions driving
+                        diversified recurring revenue.</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-xl">
+                    <div
+                        class="bg-surface border border-outline-variant rounded-2xl p-lg md:p-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center gap-sm mb-md">
+                            <span class="material-symbols-outlined text-primary text-3xl">local_shipping</span>
+                            <h3 class="font-headline-md text-xl md:text-headline-md text-primary">1. Logistics Division
+                            </h3>
+                        </div>
+                        <p class="font-body-md text-body-md text-secondary mb-md">Road freight, cargo movement,
+                            warehousing, contract logistics, and PAN-India freight operations.</p>
+                        <ul class="space-y-sm font-body-md text-secondary text-sm">
+                            <li class="flex gap-xs"><span class="text-primary">•</span> 2T to 45T load capacities</li>
+                            <li class="flex gap-xs"><span class="text-primary">•</span> 1,500+ trucks monthly</li>
+                            <li class="flex gap-xs"><span class="text-primary">•</span> Own fleet + dedicated +
+                                on-demand vehicles</li>
+                            <li class="flex gap-xs"><span class="text-primary">•</span> GPS-enabled operations &amp;
+                                corporate contracts</li>
+                        </ul>
+                        <p
+                            class="mt-md p-md bg-secondary-container/50 rounded-lg font-body-md text-on-secondary-container text-sm border-l-4 border-primary">
+                            VKT currently fulfills only ~50% of incoming logistics demand due to working capital
+                            limitations — creating immediate expansion opportunity once funded.</p>
+                    </div>
+                    <div
+                        class="bg-surface border border-outline-variant rounded-2xl p-lg md:p-xl shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-center gap-sm mb-md">
+                            <span class="material-symbols-outlined text-primary text-3xl">directions_bus</span>
+                            <h3 class="font-headline-md text-xl md:text-headline-md text-primary">2. Holidays &amp;
+                                Travel —
+                                Predator Holidays</h3>
+                        </div>
+                        <p class="font-body-md text-body-md text-secondary mb-md">Bus rentals, college excursions,
+                            corporate outings, family packages, and interstate commute services including planned
+                            Kochi–Bangalore night service.</p>
+                        <ul class="space-y-sm font-body-md text-secondary text-sm">
+                            <li class="flex gap-xs"><span class="text-primary">•</span> 23 days/month average occupancy
+                            </li>
+                            <li class="flex gap-xs"><span class="text-primary">•</span> Organic brand recognition &amp;
+                                strong inquiry flow</li>
+                            <li class="flex gap-xs"><span class="text-primary">•</span> 12–13 nearby colleges in the
+                                Aluva region</li>
+                            <li class="flex gap-xs"><span class="text-primary">•</span> Shared infrastructure reducing
+                                operational costs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market Opportunity -->
+        <section class="py-12 md:py-xl bg-surface">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
+                <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary text-center mb-8 md:mb-xl">Massive
+                    Market Opportunity
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-xl">
+                    <div class="p-lg md:p-xl bg-surface-container-low border border-outline-variant rounded-2xl">
+                        <h3 class="font-headline-md text-xl md:text-headline-md text-primary mb-md">Logistics Sector
+                        </h3>
+                        <p class="font-body-md text-body-md text-secondary mb-md">India's logistics industry is
+                            projected to reach <strong class="text-primary">₹23 lakh crore by 2030</strong>, driven by
+                            e-commerce, manufacturing growth, and supply chain modernization.</p>
+                        <p class="font-body-md text-body-md text-secondary">Road freight dominates 70–85% of logistics
+                            movement. Organized players represent only a small portion, leaving enormous room for
+                            professionally managed operators like VKT.</p>
+                    </div>
+                    <div class="p-lg md:p-xl bg-surface-container-low border border-outline-variant rounded-2xl">
+                        <h3 class="font-headline-md text-xl md:text-headline-md text-primary mb-md">Travel &amp; Tourism
+                            Sector
+                        </h3>
+                        <p class="font-body-md text-body-md text-secondary mb-md">Domestic travel continues to expand
+                            post-COVID through rising middle-class spending, group tourism, student excursions, and
+                            interstate travel growth.</p>
+                        <p class="font-body-md text-body-md text-secondary">With a captive college market, growing brand
+                            visibility, and operational expertise, VKT is positioned to scale this division
+                            significantly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Operational Strength & Technology -->
+        <section class="py-12 md:py-xl bg-surface-container-low border-y border-outline-variant">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-xl">
+                    <div>
+                        <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary mb-md">Existing
+                            Operational Strength
+                        </h2>
+                        <p class="font-body-md text-body-md text-secondary mb-lg">Fleet, infrastructure, and a dedicated
+                            team supporting daily execution.</p>
+                        <div class="grid grid-cols-2 gap-md mb-lg">
+                            <div
+                                class="bg-surface-container-lowest p-md rounded-xl border border-outline-variant text-center">
+                                <p class="text-headline-md font-bold text-primary">17</p>
+                                <p class="text-label-sm text-secondary">Owned Vehicles</p>
+                            </div>
+                            <div
+                                class="bg-surface-container-lowest p-md rounded-xl border border-outline-variant text-center">
+                                <p class="text-headline-md font-bold text-primary">10</p>
+                                <p class="text-label-sm text-secondary">Attached Vehicles</p>
+                            </div>
+                            <div
+                                class="bg-surface-container-lowest p-md rounded-xl border border-outline-variant text-center col-span-2">
+                                <p class="text-label-md text-primary font-semibold">GPS Tracking · Blackbuck Integration
+                                    · Daily On-Demand Ops</p>
+                            </div>
+                        </div>
+                        <p class="font-body-md text-body-md text-secondary text-sm">Office staff, drivers, helpers, and
+                            management personnel support end-to-end business execution.</p>
+                    </div>
+                    <div>
+                        <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary mb-md">Technology-Driven
+                            Expansion
+                        </h2>
+                        <p class="font-body-md text-body-md text-secondary mb-lg">Transitioning into a
+                            technology-enabled logistics platform with long-term national scale vision.</p>
+                        <ul class="space-y-md">
+                            <li
+                                class="flex items-center gap-sm p-md bg-surface-container-lowest rounded-lg border border-outline-variant">
+                                <span class="material-symbols-outlined text-primary">gps_fixed</span>
+                                <span class="text-secondary">GPS fleet tracking &amp; digital logistics
+                                    management</span>
+                            </li>
+                            <li
+                                class="flex items-center gap-sm p-md bg-surface-container-lowest rounded-lg border border-outline-variant">
+                                <span class="material-symbols-outlined text-primary">integration_instructions</span>
+                                <span class="text-secondary">Blackbuck integration &amp; proprietary tracking app
+                                    (planned)</span>
+                            </li>
+                            <li
+                                class="flex items-center gap-sm p-md bg-surface-container-lowest rounded-lg border border-outline-variant">
+                                <span class="material-symbols-outlined text-primary">campaign</span>
+                                <span class="text-secondary">Digital customer acquisition &amp; social media
+                                    growth</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Financial Performance -->
+        <section class="py-12 md:py-xl bg-primary-container text-on-primary">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
+                <div class="text-center mb-8 md:mb-xl">
+                    <h2 class="font-headline-lg text-2xl md:text-headline-lg mb-xs">Financial Growth &amp; Performance
+                    </h2>
+                    <p class="font-body-md text-body-md opacity-80">Strong revenue growth and operational margins over
+                        the last three financial years.</p>
+                </div>
+                <div class="overflow-x-auto mb-xl">
+                    <table class="w-full min-w-[320px] border-collapse bg-white/5 rounded-xl overflow-hidden">
+                        <thead>
+                            <tr class="border-b border-white/20">
+                                <th class="p-md text-left font-label-md uppercase tracking-wider opacity-80">Financial
+                                    Year</th>
+                                <th class="p-md text-right font-label-md uppercase tracking-wider opacity-80">Revenue
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-white/10">
+                                <td class="p-md">FY 2023–24</td>
+                                <td class="p-md text-right font-bold">₹4.2 Crore</td>
+                            </tr>
+                            <tr class="border-b border-white/10">
+                                <td class="p-md">FY 2024–25</td>
+                                <td class="p-md text-right font-bold">₹4.45 Crore</td>
+                            </tr>
+                            <tr>
+                                <td class="p-md">FY 2025–26</td>
+                                <td class="p-md text-right font-bold">₹6 Crore</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-md">
+                    <div class="bg-white/5 p-lg border border-white/10 rounded-lg text-center">
+                        <p class="text-2xl md:text-headline-lg font-bold mb-xs">32%</p>
+                        <p class="text-label-sm opacity-70 uppercase tracking-wider">Gross Profit Margin</p>
+                    </div>
+                    <div class="bg-white/5 p-lg border border-white/10 rounded-lg text-center">
+                        <p class="text-2xl md:text-headline-lg font-bold mb-xs">6.6%</p>
+                        <p class="text-label-sm opacity-70 uppercase tracking-wider">Net Profit Margin</p>
+                    </div>
+                    <div class="bg-white/5 p-lg border border-white/10 rounded-lg text-center">
+                        <p class="text-2xl md:text-headline-lg font-bold mb-xs">80%</p>
+                        <p class="text-label-sm opacity-70 uppercase tracking-wider">Logistics Revenue</p>
+                    </div>
+                    <div class="bg-white/5 p-lg border border-white/10 rounded-lg text-center">
+                        <p class="text-2xl md:text-headline-lg font-bold mb-xs">20%</p>
+                        <p class="text-label-sm opacity-70 uppercase tracking-wider">Holidays Revenue</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5-Year Growth Vision -->
+        <section id="growth-vision" class="vision-section relative py-12 md:py-xl overflow-hidden">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg relative z-10">
+                <div class="vision-header text-center mb-8 md:mb-xl max-w-2xl mx-auto">
+                    <span
+                        class="inline-block py-xs px-sm bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded uppercase tracking-wider mb-sm">Strategic
+                        Roadmap</span>
+                    <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary mb-sm">5-Year Growth Vision
+                    </h2>
+                    <p class="font-body-md text-body-md text-secondary">A phased expansion path from working-capital
+                        stability to national-scale logistics and mobility leadership.</p>
+                </div>
+
+                <!-- Desktop timeline track -->
+                <div class="hidden lg:block mb-xl relative px-8">
+                    <div class="h-1 bg-outline-variant/40 rounded-full overflow-hidden">
+                        <div class="vision-track-line h-full w-full rounded-full bg-gradient-to-r from-primary via-primary-container to-primary"
+                            style="background-size: 200% 100%; animation: none;"></div>
+                    </div>
+                    <div class="flex justify-between absolute -top-5 left-8 right-8">
+                        <div class="vision-node flex flex-col items-center" data-phase="1">
+                            <div class="relative">
+                                <span
+                                    class="vision-node-ring absolute inset-0 rounded-full bg-primary/30 scale-150"></span>
+                                <span
+                                    class="relative flex w-12 h-12 items-center justify-center rounded-full bg-primary text-on-primary font-bold shadow-lg border-2 border-surface-container-lowest">1</span>
+                            </div>
+                            <span
+                                class="mt-sm font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">Years
+                                1–2</span>
+                        </div>
+                        <div class="vision-node flex flex-col items-center" data-phase="2">
+                            <div class="relative">
+                                <span
+                                    class="vision-node-ring absolute inset-0 rounded-full bg-primary-container/40 scale-150"></span>
+                                <span
+                                    class="relative flex w-12 h-12 items-center justify-center rounded-full bg-primary-container text-on-primary font-bold shadow-lg border-2 border-surface-container-lowest">2</span>
+                            </div>
+                            <span
+                                class="mt-sm font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">Years
+                                3–4</span>
+                        </div>
+                        <div class="vision-node flex flex-col items-center active" data-phase="3">
+                            <div class="relative">
+                                <span
+                                    class="vision-node-ring absolute inset-0 rounded-full bg-secondary/50 scale-150"></span>
+                                <span
+                                    class="relative flex w-12 h-12 items-center justify-center rounded-full bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold shadow-lg border-2 border-surface-container-lowest">3</span>
+                            </div>
+                            <span
+                                class="mt-sm font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">Year
+                                5+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase cards -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-lg lg:gap-xl">
+                    <!-- Phase 1 -->
+                    <article
+                        class="vision-card group relative bg-surface-container-lowest/80 backdrop-blur-sm border border-outline-variant rounded-2xl p-lg md:p-xl overflow-hidden">
+                        <div
+                            class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary-fixed opacity-80">
+                        </div>
+                        <div
+                            class="absolute -right-8 -top-8 w-32 h-32 bg-secondary-container/40 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-700">
+                        </div>
+                        <div class="relative z-10">
+                            <div class="flex items-start justify-between mb-md">
+                                <div class="flex items-center gap-sm">
+                                    <span
+                                        class="flex w-11 h-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                                        <span class="material-symbols-outlined">account_balance_wallet</span>
+                                    </span>
+                                    <div>
+                                        <p class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">
+                                            Foundation</p>
+                                        <h3 class="font-headline-md text-xl md:text-headline-md text-primary">Phase 1
+                                        </h3>
+                                    </div>
+                                </div>
+                                <span
+                                    class="lg:hidden flex w-9 h-9 items-center justify-center rounded-full bg-primary text-on-primary text-sm font-bold">1</span>
+                            </div>
+                            <p class="font-body-md text-secondary text-sm mb-lg opacity-90">Stabilize operations and
+                                unlock immediate revenue trapped by capital constraints.</p>
+                            <ul class="space-y-sm">
+                                <li class="vision-milestone flex items-start gap-sm">
+                                    <span
+                                        class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                        <span
+                                            class="material-symbols-outlined text-primary text-[14px]">check_circle</span>
+                                    </span>
+                                    <span class="font-body-md text-secondary text-sm">Solve working capital
+                                        limitations</span>
+                                </li>
+                                <li class="vision-milestone flex items-start gap-sm">
+                                    <span
+                                        class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                        <span
+                                            class="material-symbols-outlined text-primary text-[14px]">inventory_2</span>
+                                    </span>
+                                    <span class="font-body-md text-secondary text-sm">Accept pending logistics
+                                        demand</span>
+                                </li>
+                                <li class="vision-milestone flex items-start gap-sm">
+                                    <span
+                                        class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                        <span class="material-symbols-outlined text-primary text-[14px]">speed</span>
+                                    </span>
+                                    <span class="font-body-md text-secondary text-sm">Increase fleet utilization</span>
+                                </li>
+                                <li class="vision-milestone flex items-start gap-sm">
+                                    <span
+                                        class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                        <span class="material-symbols-outlined text-primary text-[14px]">school</span>
+                                    </span>
+                                    <span class="font-body-md text-secondary text-sm">Expand college &amp; travel
+                                        presence</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Phase 2 -->
+                    <article
+                        class="vision-card group relative bg-surface-container-lowest/80 backdrop-blur-sm border border-outline-variant rounded-2xl p-lg md:p-xl overflow-hidden">
+                        <div
+                            class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-container to-primary opacity-80">
+                        </div>
+                        <div
+                            class="absolute -right-8 -top-8 w-32 h-32 bg-primary-fixed/30 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-700">
+                        </div>
+                        <div class="relative z-10">
+                            <div class="flex items-start justify-between mb-md">
+                                <div class="flex items-center gap-sm">
+                                    <span
+                                        class="flex w-11 h-11 items-center justify-center rounded-xl bg-primary-container/15 text-primary-container">
+                                        <span class="material-symbols-outlined">devices</span>
+                                    </span>
+                                    <div>
+                                        <p class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">
+                                            Digital Scale</p>
+                                        <h3 class="font-headline-md text-xl md:text-headline-md text-primary">Phase 2
+                                        </h3>
+                                    </div>
+                                </div>
+                                <span
+                                    class="lg:hidden flex w-9 h-9 items-center justify-center rounded-full bg-primary-container text-on-primary text-sm font-bold">2</span>
+                            </div>
+                            <p class="font-body-md text-secondary text-sm mb-lg opacity-90">Productize services and
+                                accelerate growth through technology and packaged offerings.</p>
+                            <ul class="space-y-sm">
+                                <li class="vision-milestone flex items-start gap-sm">
+                                    <span
+                                        class="flex-shrink-0 w-6 h-6 rounded-full bg-primary-container/15 flex items-center justify-center mt-0.5">
+                                        <span
+                                            class="material-symbols-outlined text-primary text-[14px]">phone_android</span>
+                                    </span>
+                                    <span class="font-body-md text-secondary text-sm">Launch proprietary tracking
+                                        app</span>
+                                </li>
+                                <li class="vision-milestone flex items-start gap-sm">
+                                    <span
+                                        class="flex-shrink-0 w-6 h-6 rounded-full bg-primary-container/15 flex items-center justify-center mt-0.5">
+                                        <span
+                                            class="material-symbols-outlined text-primary text-[14px]">package_2</span>
+                                    </span>
+                                    <span class="font-body-md text-secondary text-sm">Introduce packaged freight
+                                        products</span>
+                                </li>
+                                <li class="vision-milestone flex items-start gap-sm">
+                                    <span
+                                        class="flex-shrink-0 w-6 h-6 rounded-full bg-primary-container/15 flex items-center justify-center mt-0.5">
+                                        <span
+                                            class="material-symbols-outlined text-primary text-[14px]">flight_takeoff</span>
+                                    </span>
+                                    <span class="font-body-md text-secondary text-sm">Expand tourism operations</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Phase 3 -->
+                    <article
+                        class="vision-card group relative bg-surface-container-lowest/80 backdrop-blur-sm border border-outline-variant rounded-2xl p-lg md:p-xl overflow-hidden lg:translate-y-4">
+                        <div
+                            class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary to-primary opacity-80">
+                        </div>
+                        <div
+                            class="absolute -right-8 -top-8 w-32 h-32 bg-primary/20 rounded-full blur-2xl group-hover:scale-125 transition-transform duration-700">
+                        </div>
+                        <div class="relative z-10">
+                            <div class="flex items-start justify-between mb-md">
+                                <div class="flex items-center gap-sm">
+                                    <span
+                                        class="flex w-11 h-11 items-center justify-center rounded-xl bg-gradient-to-br from-primary/20 to-primary-container/20 text-primary">
+                                        <span class="material-symbols-outlined">public</span>
+                                    </span>
+                                    <div>
+                                        <p class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">
+                                            National Scale</p>
+                                        <h3 class="font-headline-md text-xl md:text-headline-md text-primary">Phase 3
+                                        </h3>
+                                    </div>
+                                </div>
+                                <span
+                                    class="lg:hidden flex w-9 h-9 items-center justify-center rounded-full bg-gradient-to-br from-primary to-primary-container text-on-primary text-sm font-bold">3</span>
+                            </div>
+                            <p class="font-body-md text-secondary text-sm mb-lg opacity-90">Scale infrastructure and
+                                geographic reach into a diversified national mobility brand.</p>
+                            <ul class="space-y-sm">
+                                <li class="vision-milestone flex items-start gap-sm">
+                                    <span
+                                        class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                        <span
+                                            class="material-symbols-outlined text-primary text-[14px]">local_shipping</span>
+                                    </span>
+                                    <span class="font-body-md text-secondary text-sm">Add larger fleet capacities</span>
+                                </li>
+                                <li class="vision-milestone flex items-start gap-sm">
+                                    <span
+                                        class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                        <span class="material-symbols-outlined text-primary text-[14px]">map</span>
+                                    </span>
+                                    <span class="font-body-md text-secondary text-sm">Expand to new national
+                                        corridors</span>
+                                </li>
+                                <li class="vision-milestone flex items-start gap-sm">
+                                    <span
+                                        class="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
+                                        <span class="material-symbols-outlined text-primary text-[14px]">route</span>
+                                    </span>
+                                    <span class="font-body-md text-secondary text-sm">Scale multi-state travel
+                                        services</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Investment Proposal -->
+        <section id="investment-proposal" class="py-12 md:py-xl bg-surface-container-lowest scroll-mt-24">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
+                <div class="text-center mb-8 md:mb-xl">
+                    <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary">Investment Proposal</h2>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-xl mb-8 md:mb-xl">
+                    <div
+                        class="lg:col-span-1 bg-primary text-on-primary p-6 md:p-xl rounded-2xl text-center flex flex-col justify-center">
+                        <p class="font-label-sm uppercase tracking-widest opacity-80 mb-sm">Funding Requirement</p>
+                        <p class="font-display-lg text-3xl md:text-4xl lg:text-display-lg font-bold leading-none">₹2.6
+                            Cr</p>
+                        <p class="mt-md font-body-md opacity-90">30% Equity Partnership</p>
+                    </div>
+                    <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-md">
+                        <div class="bg-surface p-lg rounded-xl border border-outline-variant">
+                            <p class="font-label-md text-primary font-semibold mb-xs">Investment Structure</p>
+                            <ul class="text-secondary text-sm space-y-xs font-body-md">
+                                <li>5 investment units</li>
+                                <li>₹52 Lakhs per unit</li>
+                                <li>6% equity per unit</li>
+                            </ul>
+                        </div>
+                        <div class="bg-surface p-lg rounded-xl border border-outline-variant">
+                            <p class="font-label-md text-primary font-semibold mb-xs">Pre-Money Valuation</p>
+                            <p class="text-xl md:text-headline-md font-bold text-primary">₹6.06 Crores</p>
+                            <p class="text-secondary text-sm mt-xs">~1× current revenue</p>
+                        </div>
+                        <div class="sm:col-span-2 bg-surface p-lg rounded-xl border border-outline-variant">
+                            <p class="font-label-md text-primary font-semibold mb-sm">Use of Funds</p>
+                            <div class="flex flex-wrap gap-sm">
+                                <span
+                                    class="px-sm py-xs bg-secondary-container text-on-secondary-container rounded font-label-sm text-label-sm">Vehicle
+                                    purchases</span>
+                                <span
+                                    class="px-sm py-xs bg-secondary-container text-on-secondary-container rounded font-label-sm text-label-sm">Working
+                                    capital</span>
+                                <span
+                                    class="px-sm py-xs bg-secondary-container text-on-secondary-container rounded font-label-sm text-label-sm">Operational
+                                    expansion</span>
+                                <span
+                                    class="px-sm py-xs bg-secondary-container text-on-secondary-container rounded font-label-sm text-label-sm">Fleet
+                                    scaling</span>
+                                <span
+                                    class="px-sm py-xs bg-secondary-container text-on-secondary-container rounded font-label-sm text-label-sm">Business
+                                    growth</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Investor Benefits -->
+        <section class="py-12 md:py-xl bg-surface border-y border-outline-variant">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
+                <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary text-center mb-8 md:mb-xl">
+                    Investor Benefits</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md">
+                    <div class="p-lg bg-surface-container-low rounded-xl border border-outline-variant">
+                        <span class="material-symbols-outlined text-primary text-3xl mb-sm">payments</span>
+                        <h3 class="font-label-md text-primary font-semibold mb-xs">Structured Dividends</h3>
+                        <p class="text-secondary text-sm">Years 1–3: 70% of net profits quarterly. Year 4+: 50%
+                            quarterly.</p>
+                    </div>
+                    <div class="p-lg bg-surface-container-low rounded-xl border border-outline-variant">
+                        <span class="material-symbols-outlined text-primary text-3xl mb-sm">chair</span>
+                        <h3 class="font-label-md text-primary font-semibold mb-xs">Passive Model</h3>
+                        <p class="text-secondary text-sm">No daily operational involvement required.</p>
+                    </div>
+                    <div class="p-lg bg-surface-container-low rounded-xl border border-outline-variant">
+                        <span class="material-symbols-outlined text-primary text-3xl mb-sm">description</span>
+                        <h3 class="font-label-md text-primary font-semibold mb-xs">Transparency</h3>
+                        <p class="text-secondary text-sm">Quarterly reporting, performance updates &amp; financial
+                            statements.</p>
+                    </div>
+                    <div class="p-lg bg-surface-container-low rounded-xl border border-outline-variant">
+                        <span class="material-symbols-outlined text-primary text-3xl mb-sm">logout</span>
+                        <h3 class="font-label-md text-primary font-semibold mb-xs">Exit Options</h3>
+                        <p class="text-secondary text-sm">Management buyback or third-party sale after lock-in.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why This Opportunity Stands Out -->
+        <section class="py-12 md:py-xl bg-secondary-container/30">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
+                <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary text-center mb-md">Why This
+                    Opportunity Stands
+                    Out</h2>
+                <p class="font-body-md text-body-md text-secondary text-center max-w-3xl mx-auto mb-xl">VKT combines
+                    operational credibility with expansion-ready infrastructure — a rare chance to invest in an already
+                    operational business entering its scale-up phase.</p>
+                <div class="flex flex-wrap justify-center gap-sm max-w-4xl mx-auto">
+                    <span
+                        class="px-md py-sm bg-surface border border-outline-variant rounded-full font-label-sm text-primary">Operational
+                        credibility</span>
+                    <span
+                        class="px-md py-sm bg-surface border border-outline-variant rounded-full font-label-sm text-primary">Existing
+                        revenues</span>
+                    <span
+                        class="px-md py-sm bg-surface border border-outline-variant rounded-full font-label-sm text-primary">Real
+                        market demand</span>
+                    <span
+                        class="px-md py-sm bg-surface border border-outline-variant rounded-full font-label-sm text-primary">Dual
+                        business engines</span>
+                    <span
+                        class="px-md py-sm bg-surface border border-outline-variant rounded-full font-label-sm text-primary">Technology
+                        integration</span>
+                    <span
+                        class="px-md py-sm bg-surface border border-outline-variant rounded-full font-label-sm text-primary">Strong
+                        regional positioning</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join the Growth Journey -->
+        <section class="py-12 md:py-xl bg-primary text-on-primary">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg text-center">
+                <h2 class="font-headline-lg text-2xl md:text-headline-lg mb-md">Join the Growth Journey</h2>
+                <p class="font-body-lg text-body-lg opacity-90 max-w-3xl mx-auto mb-lg">VKT Logistics LLP is building a
+                    future-focused logistics and mobility platform designed to scale across India's rapidly growing
+                    transport and travel sectors.</p>
+                <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-md font-body-md">
+                    <a href="mailto:vktlogisticsllp@gmail.com" class="inline-flex items-center gap-xs hover:underline">
+                        <span class="material-symbols-outlined">mail</span> vktlogisticsllp@gmail.com
+                    </a>
+                    <a href="tel:+917356697973" class="inline-flex items-center gap-xs hover:underline">
+                        <span class="material-symbols-outlined">call</span> +91 73566 97973
+                    </a>
+                    <a href="tel:+919037597973" class="inline-flex items-center gap-xs hover:underline">
+                        <span class="material-symbols-outlined">call</span> +91 90375 97973
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capital Deployment Section -->
+        <section class="py-12 md:py-xl bg-surface-container-lowest border-y border-outline-variant">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
+                <div class="flex flex-col md:flex-row gap-8 md:gap-xl items-start">
+                    <div class="md:w-1/3">
+                        <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary mb-md">Capital Deployment
+                            Strategy</h2>
+                        </h2>
+                        <p class="font-body-md text-body-md text-secondary mb-lg">Funds will be allocated to unlock
+                            pending demand, scale fleet capacity, and accelerate technology-led growth across both
+                            divisions.</p>
+                        <ul class="space-y-md">
+                            <li
+                                class="flex items-start gap-sm p-md border-l-4 border-primary bg-surface-container-low hover:border-primary transition-all">
+                                <span class="material-symbols-outlined text-primary">local_shipping</span>
+                                <div>
+                                    <p class="font-label-md text-label-md text-primary">Vehicle Purchases &amp; Fleet
+                                        Scaling</p>
+                                    <p class="font-label-sm text-label-sm text-on-surface-variant">Expand owned and
+                                        attached fleet to capture unmet freight demand.</p>
+                                </div>
+                            </li>
+                            <li
+                                class="flex items-start gap-sm p-md border-l-4 border-outline-variant hover:border-primary transition-all">
+                                <span class="material-symbols-outlined text-primary">payments</span>
+                                <div>
+                                    <p class="font-label-md text-label-md text-primary">Working Capital</p>
+                                    <p class="font-label-sm text-label-sm text-on-surface-variant">Accept currently
+                                        pending logistics contracts and stabilize cash flow.</p>
+                                </div>
+                            </li>
+                            <li
+                                class="flex items-start gap-sm p-md border-l-4 border-outline-variant hover:border-primary transition-all">
+                                <span class="material-symbols-outlined text-primary">trending_up</span>
+                                <div>
+                                    <p class="font-label-md text-label-md text-primary">Operational Expansion</p>
+                                    <p class="font-label-sm text-label-sm text-on-surface-variant">Grow holidays
+                                        division, college market presence, and national corridors.</p>
+                                </div>
+                            </li>
+                            <li
+                                class="flex items-start gap-sm p-md border-l-4 border-outline-variant hover:border-primary transition-all">
+                                <span class="material-symbols-outlined text-primary">hub</span>
+                                <div>
+                                    <p class="font-label-md text-label-md text-primary">Business Growth Initiatives</p>
+                                    <p class="font-label-sm text-label-sm text-on-surface-variant">Technology
+                                        integration, digital acquisition, and packaged freight products.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-md">
+                        <div class="rounded-xl overflow-hidden shadow-md border border-outline-variant h-full">
+                            <img alt="Boardroom strategy discussion for VKT Logistics"
+                                class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500"
+                                src="https://lh3.googleusercontent.com/aida/ADBb0uhaBFsGDzh-NK-VbxC4cqtIEOuARINCjt1uA8_9O0ZJSxrGW0KNIQqTVIA6AI6Rd0c3iZkufjsINA1wg72S30Ybpt1_iUaULJwkJYG_pNprPIq3b9d6MuIy_Knqils6GcmYYqZIye5e_aICqk794-685EHl2gSxfOgt81P7X8r0FEHTJKEGg4DTByT6GwVZwk3_HuNMhYJ3gc6zcQNvTuoFpykB2OPzNmW5fnaiyIbLiH9Msx5eSj2rNA">
+                        </div>
+                        <div class="flex flex-col gap-md">
+                            <div
+                                class="bg-surface-container-high p-lg rounded-xl flex items-center justify-center border border-outline-variant">
+                                <div class="text-center">
+                                    <p class="text-2xl md:text-headline-lg font-bold text-primary">40%</p>
+                                    <p class="text-label-sm font-label-sm text-secondary">Asset Acquisition</p>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-secondary-container p-lg rounded-xl flex items-center justify-center border border-outline-variant flex-1">
+                                <div class="text-center">
+                                    <p class="text-2xl md:text-headline-lg font-bold text-on-secondary-container">60%
+                                    </p>
+                                    <p class="text-label-sm font-label-sm text-secondary">Operations &amp; Tech</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-12 md:py-xl bg-surface">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
+                <div class="text-center mb-lg">
+                    <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary mb-xs">Market Scale Highlights
+                    </h2>
+                    <p class="font-body-md text-body-md text-secondary">India's logistics and travel sectors offer
+                        substantial long-term growth runway.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                    <div class="bg-surface-container-low p-lg border border-outline-variant rounded-lg text-center">
+                        <p class="text-2xl md:text-headline-lg font-bold text-primary mb-xs">₹23 L Cr+</p>
+                        <p class="text-label-md font-label-md text-secondary uppercase tracking-wider">Logistics Market
+                            by 2030</p>
+                    </div>
+                    <div class="bg-surface-container-low p-lg border border-outline-variant rounded-lg text-center">
+                        <p class="text-2xl md:text-headline-lg font-bold text-primary mb-xs">70–85%</p>
+                        <p class="text-label-md font-label-md text-secondary uppercase tracking-wider">Road Freight
+                            Share</p>
+                    </div>
+                    <div class="bg-surface-container-low p-lg border border-outline-variant rounded-lg text-center">
+                        <p class="text-2xl md:text-headline-lg font-bold text-primary mb-xs">~50%</p>
+                        <p class="text-label-md font-label-md text-secondary uppercase tracking-wider">Unmet Logistics
+                            Demand</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Final CTA / Legal Stability Section -->
+        <section class="py-12 md:py-xl bg-surface-container-low">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
+                <div
+                    class="bg-white border border-outline-variant rounded-2xl overflow-hidden flex flex-col md:flex-row shadow-sm">
+                    <div class="md:w-1/3">
+                        <img alt="Signed and stamped contract for VKT Logistics investor relations"
+                            class="w-full h-full object-cover"
+                            src="https://lh3.googleusercontent.com/aida/ADBb0ujpLWWRRKw4otrNIIBsQ0xkkegaBjJNALpA-H09f-svWsFVH8O8kRB9mYDo82ASKjCCqQR23F4OQ4xj_95v6rdU_3Yy2aXxPzBPD-I02cyP8Kx2dyo3VhTBC0HKnrRVrRN9FgTp-5hiPkN8rNMs_mGB9AWAdTN5aYjy1tnkprCB4HFYdTJKBpTcZhV3wU9ixNaXTG4MvWz27AiTyWRmU4rUchtA4plzCo45MjS2mdUGBMw2OPCrmVKd">
+                    </div>
+                    <div class="md:w-2/3 p-6 md:p-xl flex flex-col justify-center">
+                        <h2 class="font-headline-lg text-2xl md:text-headline-lg text-primary mb-md">Grounded in
+                            Integrity</h2>
+                        <p class="font-body-lg text-body-lg text-secondary mb-lg">VKT Logistics LLP maintains full
+                            compliance with Indian corporate regulations. Our investment process is transparent, legally
+                            robust, and designed to protect long-term shareholder value.</p>
+                        <div class="flex flex-wrap gap-md">
+                            <button
+                                class="bg-primary text-on-primary px-6 md:px-lg py-3 md:py-md rounded font-label-md text-label-md hover:opacity-90 transition-all">Download
+                                Audit Report</button>
+                            <button class="text-primary font-bold flex items-center gap-xs hover:underline">
+                                Legal Documentation <span class="material-symbols-outlined">north_east</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Register Your Interest -->
+        <section class="py-12 md:py-xl bg-surface">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-lg">
+                <div
+                    class="flex flex-col lg:flex-row bg-surface-container-low border border-outline-variant rounded-2xl overflow-hidden shadow-sm">
+                    <div class="lg:w-1/2 relative hidden lg:block">
+                        <img alt="VKT Logistics Team Meeting" class="w-full h-full object-cover"
+                            src="assets/careers_team.png">
+                        <div class="absolute inset-0 bg-primary/10"></div>
+                    </div>
+                    <div class="lg:w-1/2 p-lg md:p-xl">
+                        <div class="mb-xl">
+                            <h2 class="font-display-lg text-2xl md:text-headline-lg text-primary mb-md">Register Your
+                                Interest</h2>
+                            <p class="font-body-md text-body-md text-secondary">Interested in partnering with VKT
+                                Logistics?
+                                Leave your details below, and our leadership team will reach out to discuss the
+                                investment
+                                opportunity further.</p>
+                        </div>
+                        <form class="space-y-md">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+                                <div class="space-y-xs">
+                                    <label
+                                        class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider"
+                                        for="full-name">Full Name</label>
+                                    <input
+                                        class="w-full border-0 border-b-2 border-outline-variant bg-surface-container-lowest px-md py-sm focus:border-primary focus:ring-0 transition-colors font-body-md"
+                                        id="full-name" placeholder="John Doe" type="text">
+                                </div>
+                                <div class="space-y-xs">
+                                    <label
+                                        class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider"
+                                        for="company">Company</label>
+                                    <input
+                                        class="w-full border-0 border-b-2 border-outline-variant bg-surface-container-lowest px-md py-sm focus:border-primary focus:ring-0 transition-colors font-body-md"
+                                        id="company" placeholder="Organization Name" type="text">
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+                                <div class="space-y-xs">
+                                    <label
+                                        class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider"
+                                        for="capacity">Investment Capacity</label>
+                                    <select
+                                        class="w-full border-0 border-b-2 border-outline-variant bg-surface-container-lowest px-md py-sm focus:border-primary focus:ring-0 transition-colors font-body-md"
+                                        id="capacity">
+                                        <option value="">Select Capacity</option>
+                                        <option value="52L">₹52 Lakhs (1 Unit / 6% Equity)</option>
+                                        <option value="1.04Cr">₹1.04 Cr (2 Units)</option>
+                                        <option value="1.56Cr">₹1.56 Cr (3 Units)</option>
+                                        <option value="2.6Cr">₹2.6 Cr (Full Partnership)</option>
+                                    </select>
+                                </div>
+                                <div class="space-y-xs">
+                                    <label
+                                        class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider"
+                                        for="phone">Phone Number</label>
+                                    <input
+                                        class="w-full border-0 border-b-2 border-outline-variant bg-surface-container-lowest px-md py-sm focus:border-primary focus:ring-0 transition-colors font-body-md"
+                                        id="phone" placeholder="+91 00000 00000" type="tel">
+                                </div>
+                            </div>
+                            <div class="space-y-xs">
+                                <label
+                                    class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider"
+                                    for="message">Inquiry Message</label>
+                                <textarea
+                                    class="w-full border-0 border-b-2 border-outline-variant bg-surface-container-lowest px-md py-sm focus:border-primary focus:ring-0 transition-colors font-body-md"
+                                    id="message" placeholder="How can we help you?" rows="3"></textarea>
+                            </div>
+                            <div class="pt-md">
+                                <button
+                                    class="w-full bg-primary text-on-primary font-label-md text-label-md py-3 md:py-lg rounded-xl hover:bg-primary-container hover:shadow-lg active:scale-[0.98] transition-all uppercase tracking-widest font-bold shadow-md"
+                                    type="submit">
+                                    Submit Interest
+                                </button>
+                                <div
+                                    class="mt-md flex items-center justify-center gap-xs text-on-surface-variant font-label-sm">
+                                    <span class="material-symbols-outlined text-[16px]">lock</span>
+                                    <span class="">Secure Submission. Your data is protected by our privacy
+                                        policy.</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer
+        class="bg-surface-container-lowest dark:bg-tertiary-container border-t border-outline-variant dark:border-outline">
+        <div
+            class="w-full py-6 md:py-8 px-margin-mobile md:px-lg flex flex-col md:flex-row justify-between items-center gap-md max-w-container-max mx-auto">
+            <a href="index.html"
+                class="flex items-center gap-3 hover:scale-[1.02] active:scale-[0.98] transition-transform duration-300">
+                <img alt="VKT Logistics" class="h-10 w-auto object-contain" src="assets/logo_emblem.png" />
+                <span class="font-label-md text-label-md font-bold text-primary dark:text-primary-fixed">VKT Logistics
+                    LLP</span>
+            </a>
+            <div class="flex flex-wrap justify-center gap-md">
+                <a class="text-secondary dark:text-on-tertiary-container hover:text-primary transition-all font-label-sm text-label-sm"
+                    href="#">Privacy Policy</a>
+                <a class="text-secondary dark:text-on-tertiary-container hover:text-primary transition-all font-label-sm text-label-sm"
+                    href="#">Terms of Service</a>
+                <a class="text-secondary dark:text-on-tertiary-container hover:text-primary transition-all font-label-sm text-label-sm"
+                    href="#">Carrier Login</a>
+                <a class="text-secondary dark:text-on-tertiary-container hover:text-primary transition-all font-label-sm text-label-sm"
+                    href="contact.html">Contact</a>
+            </div>
+            <p class="text-secondary dark:text-on-tertiary-container font-body-md text-body-md opacity-70">© 2026 VKT
+                Logistics LLP. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+
+    <script>
+        // Micro-interaction for capital deployment cards
+        document.querySelectorAll('.hover\\:border-primary').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-4px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+
+        // 5-Year Growth Vision — scroll reveal & interactive timeline
+        (function () {
+            const visionSection = document.getElementById('growth-vision');
+            if (!visionSection) return;
+
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            visionSection.classList.add('is-visible');
+                        }
+                    });
+                },
+                { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+            );
+            observer.observe(visionSection);
+
+            const cards = visionSection.querySelectorAll('.vision-card');
+            const nodes = visionSection.querySelectorAll('.vision-node[data-phase]');
+
+            cards.forEach((card, index) => {
+                card.addEventListener('mouseenter', () => {
+                    nodes.forEach((n) => n.classList.remove('active'));
+                    const node = visionSection.querySelector('.vision-node[data-phase="' + (index + 1) + '"]');
+                    if (node) node.classList.add('active');
+                });
+            });
+
+            visionSection.addEventListener('mouseleave', () => {
+                nodes.forEach((n) => n.classList.remove('active'));
+                const defaultNode = visionSection.querySelector('.vision-node[data-phase="3"]');
+                if (defaultNode && window.matchMedia('(min-width: 1024px)').matches) {
+                    defaultNode.classList.add('active');
+                }
+            });
+        })();
+    </script>
+<!-- Footer -->
+    <footer class="bg-white text-secondary border-t border-surface-container-high pt-12 md:pt-xl pb-6 md:pb-8 relative overflow-hidden">
+        <!-- Background Glows -->
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-primary/5 rounded-full blur-3xl pointer-events-none">
+        </div>
+
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-xl">
+                <!-- Brand Column -->
+                <div class="space-y-sm lg:col-span-4">
+                    <div class="flex items-center gap-4">
+                        <img alt="VKT Logistics" class="h-10 w-auto object-contain" src="assets/logo_emblem.png" />
+                        <span class="font-headline-md text-headline-md font-bold text-primary tracking-tight">VKT
+                            LOGISTICS LLP</span>
+                    </div>
+                    <p class="text-primary font-bold text-xs uppercase tracking-wider">Moving India. Growing Together.
+                    </p>
+                    <p class="text-secondary text-sm leading-relaxed max-w-sm">
+                        Reliable logistics. Trusted partnerships. Scalable mobility solutions. Delivering transport and
+                        supply chain excellence across India since 2006.
+                    </p>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="flex flex-col gap-base lg:col-span-2">
+                    <div class="relative pb-2">
+                        <span class="font-label-md text-label-md text-primary uppercase tracking-wider block">Quick
+                            Links</span>
+                        <div class="absolute bottom-0 left-0 w-8 h-[2px] bg-primary"></div>
+                    </div>
+                    <div class="flex flex-col gap-3 pt-2">
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+                            href="index.html">
+                            <span
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Home</span>
+                        </a>
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+                            href="about.html">
+                            <span
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">About Us</span>
+                        </a>
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+                            href="services.html">
+                            <span
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Services</span>
+                        </a>
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+                            href="logistics.html">
+                            <span
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Logistics</span>
+                        </a>
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+                            href="holidays.html">
+                            <span
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Predator Holidays</span>
+                        </a>
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+                            href="investors.html">
+                            <span
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Investors</span>
+                        </a>
+                        <a class="text-secondary hover:text-primary transition-all text-sm font-medium flex items-center gap-1 group"
+                            href="contact.html">
+                            <span
+                                class="material-symbols-outlined text-[10px] text-primary opacity-0 group-hover:opacity-100 transition-all duration-300">chevron_right</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Contact</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Divisions Column -->
+                <div class="flex flex-col gap-base lg:col-span-3">
+                    <div class="relative pb-2">
+                        <span class="font-label-md text-label-md text-primary uppercase tracking-wider block">Our
+                            Divisions</span>
+                        <div class="absolute bottom-0 left-0 w-8 h-[2px] bg-primary"></div>
+                    </div>
+                    <div class="flex flex-col gap-3 pt-2">
+                        <div class="text-secondary text-sm flex items-center gap-2">
+                            <span
+                                class="material-symbols-outlined text-base text-primary-container">local_shipping</span>
+                            <span>Industrial Freight & Cargo</span>
+                        </div>
+                        <div class="text-secondary text-sm flex items-center gap-2">
+                            <span
+                                class="material-symbols-outlined text-base text-primary-container">airport_shuttle</span>
+                            <span>Corporate Employee Mobility</span>
+                        </div>
+                        <div class="text-secondary text-sm flex items-center gap-2">
+                            <span
+                                class="material-symbols-outlined text-base text-primary-container">directions_bus</span>
+                            <span>Premium Fleet Solutions</span>
+                        </div>
+                        <div class="text-secondary text-sm flex items-center gap-2">
+                            <span class="material-symbols-outlined text-base text-primary-container">explore</span>
+                            <span>Predator Holidays (Leisure)</span>
+                        </div>
+                        <div class="text-secondary text-sm flex items-center gap-2">
+                            <span class="material-symbols-outlined text-base text-primary-container">domain</span>
+                            <span>Warehouse Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="flex flex-col gap-base lg:col-span-3">
+                    <div class="relative pb-2">
+                        <span class="font-label-md text-label-md text-primary uppercase tracking-wider block">Get In
+                            Touch</span>
+                        <div class="absolute bottom-0 left-0 w-8 h-[2px] bg-primary"></div>
+                    </div>
+                    <div class="space-y-sm text-sm pt-2">
+                        <div class="flex flex-col gap-1">
+                            <span class="font-semibold text-primary">Email:</span>
+                            <div
+                                class="flex items-center gap-2 text-secondary hover:text-primary transition-all duration-300">
+                                <span class="material-symbols-outlined text-base text-primary-container">mail</span>
+                                <a href="mailto:vktlogisticsllp@gmail.com"
+                                    class="hover:underline">vktlogisticsllp@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <span class="font-semibold text-primary">Phone:</span>
+                            <div
+                                class="flex items-center gap-2 text-secondary hover:text-primary transition-all duration-300">
+                                <span class="material-symbols-outlined text-base text-primary-container">call</span>
+                                <a href="tel:+917356697973" class="hover:underline">+91 73566 97973</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <span class="font-semibold text-primary">Headquarters:</span>
+                            <div class="flex items-start gap-2 text-secondary">
+                                <span
+                                    class="material-symbols-outlined text-base text-primary-container mt-0.5">location_on</span>
+                                <span>Aluva, Kochi, Kerala, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="mt-lg pt-md border-t border-surface-container flex flex-col sm:flex-row justify-between items-center gap-base">
+                <p class="text-secondary/60 text-sm">© 2026 VKT Logistics LLP. All Rights Reserved.</p>
+                <div class="flex gap-md">
+                    <a class="w-10 h-10 rounded-full border border-surface-container-high flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+                        href="#">
+                        <span class="material-symbols-outlined text-lg">public</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full border border-surface-container-high flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+                        href="mailto:vktlogisticsllp@gmail.com">
+                        <span class="material-symbols-outlined text-lg">mail</span>
+                    </a>
+                    <a class="w-10 h-10 rounded-full border border-surface-container-high flex items-center justify-center text-secondary hover:bg-primary hover:text-white hover:border-primary transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+                        href="tel:+917356697973">
+                        <span class="material-symbols-outlined text-lg">call</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+
+    
+
+    
+    <!-- Premium WhatsApp Floating Button -->
+    <a href="https://wa.me/917356697973"
+        class="whatsapp-float group flex items-center" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <div class="flex items-center gap-3 bg-gradient-to-r from-[#25D366] to-[#128C7E] text-white px-5 py-3 rounded-full shadow-[0_8px_30px_rgb(37,211,102,0.4)] hover:shadow-[0_12px_40px_rgb(37,211,102,0.6)] transition-all duration-300 transform group-hover:-translate-y-1 border border-white/20 backdrop-blur-sm">
+            <div class="relative flex items-center justify-center">
+                <div class="absolute inset-0 bg-white rounded-full opacity-0 group-hover:animate-ping"></div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-6 h-6 relative z-10 drop-shadow" />
+            </div>
+            <span class="font-label-md font-bold text-sm tracking-wide pr-1">Chat with us</span>
+        </div>
+    </a>
+</body>
+
+</html>
