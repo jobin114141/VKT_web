@@ -323,3 +323,58 @@ window.calculateRates = function(event) {
     document.getElementById('calc-res-cost').textContent = `₹${estimatedCost.toLocaleString('en-IN')}`;
 };
 
+
+// Handle Form Submissions via mailto:
+window.handleContactSubmit = function(event) {
+    event.preventDefault();
+    const form = event.target;
+    let subject = "Website Inquiry";
+    
+    // Check if there is a subject field
+    const subjectField = form.querySelector('[id*="subject"]');
+    if (subjectField && subjectField.value) {
+        if (subjectField.options) {
+            subject = subjectField.options[subjectField.selectedIndex].text;
+        } else {
+            subject = subjectField.value;
+        }
+    } else {
+        if (form.id === 'interactive-contact-form' || form.id === 'contact-form') {
+            subject = "Contact Us Inquiry";
+        } else if (window.location.pathname.includes('investors')) {
+            subject = "Investor Interest Registration";
+        }
+    }
+
+    let body = "Hello VKT Logistics Team,\n\nI would like to submit the following details:\n\n";
+    
+    const inputs = form.querySelectorAll('input, textarea, select');
+    inputs.forEach(input => {
+        if (input.type === 'submit' || input.type === 'button') return;
+        
+        let label = input.previousElementSibling ? input.previousElementSibling.innerText : input.placeholder || input.id || input.name;
+        
+        // Clean label if it's too long or try to find an actual label element if not direct sibling
+        if (!label || label.length > 50) {
+            const labelEl = form.querySelector(`label[for="${input.id}"]`);
+            if (labelEl) label = labelEl.innerText;
+            else label = input.placeholder || input.id;
+        }
+        
+        let value = input.value;
+        if (input.tagName.toLowerCase() === 'select') {
+            if (input.options[input.selectedIndex].disabled || !input.value) return;
+            value = input.options[input.selectedIndex].text;
+        }
+        
+        if (value) {
+            body += `${label}:\n${value}\n\n`;
+        }
+    });
+
+    // Open mailto link
+    const mailtoLink = `mailto:vktlogisticsllp@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+    
+    form.reset();
+};

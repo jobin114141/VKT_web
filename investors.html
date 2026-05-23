@@ -426,9 +426,7 @@
             class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-full">
             <a href="index.html"
                 class="flex items-center gap-3 hover:scale-[1.02] active:scale-[0.98] transition-transform duration-300">
-                <img alt="VKT Logistics" class="h-9 w-auto object-contain" src="assets/logo_emblem.png" />
-                <span class="font-headline-md text-headline-md text-secondary tracking-wide font-normal"><span
-                        class="font-bold text-primary">VKT</span> Logistics</span>
+                <img alt="VKT Logistics LLP" class="h-10 w-auto object-contain" src="assets/logo_transparent_trimmed.png" />
             </a>
             <div class="hidden xl:flex items-center gap-4 2xl:gap-md">
                 <a class="text-secondary hover:text-primary transition-colors pb-1 border-b-2 border-transparent font-label-md text-label-md uppercase tracking-wider"
@@ -1347,7 +1345,7 @@
                                 investment
                                 opportunity further.</p>
                         </div>
-                        <form class="space-y-md">
+                        <form class="space-y-md" onsubmit="handleContactSubmit(event)">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
                                 <div class="space-y-xs">
                                     <label
@@ -1355,7 +1353,7 @@
                                         for="full-name">Full Name</label>
                                     <input
                                         class="w-full border-0 border-b-2 border-outline-variant bg-surface-container-lowest px-md py-sm focus:border-primary focus:ring-0 transition-colors font-body-md"
-                                        id="full-name" placeholder="John Doe" type="text">
+                                        id="full-name" placeholder="John Doe" type="text" required>
                                 </div>
                                 <div class="space-y-xs">
                                     <label
@@ -1363,7 +1361,7 @@
                                         for="company">Company</label>
                                     <input
                                         class="w-full border-0 border-b-2 border-outline-variant bg-surface-container-lowest px-md py-sm focus:border-primary focus:ring-0 transition-colors font-body-md"
-                                        id="company" placeholder="Organization Name" type="text">
+                                        id="company" placeholder="Organization Name" type="text" required>
                                 </div>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-md">
@@ -1373,7 +1371,7 @@
                                         for="capacity">Investment Capacity</label>
                                     <select
                                         class="w-full border-0 border-b-2 border-outline-variant bg-surface-container-lowest px-md py-sm focus:border-primary focus:ring-0 transition-colors font-body-md"
-                                        id="capacity">
+                                        id="capacity" required>
                                         <option value="">Select Capacity</option>
                                         <option value="52L">₹52 Lakhs (1 Unit / 6% Equity)</option>
                                         <option value="1.04Cr">₹1.04 Cr (2 Units)</option>
@@ -1387,7 +1385,7 @@
                                         for="phone">Phone Number</label>
                                     <input
                                         class="w-full border-0 border-b-2 border-outline-variant bg-surface-container-lowest px-md py-sm focus:border-primary focus:ring-0 transition-colors font-body-md"
-                                        id="phone" placeholder="+91 00000 00000" type="tel">
+                                        id="phone" placeholder="+91 00000 00000" type="tel" required>
                                 </div>
                             </div>
                             <div class="space-y-xs">
@@ -1396,7 +1394,7 @@
                                     for="message">Inquiry Message</label>
                                 <textarea
                                     class="w-full border-0 border-b-2 border-outline-variant bg-surface-container-lowest px-md py-sm focus:border-primary focus:ring-0 transition-colors font-body-md"
-                                    id="message" placeholder="How can we help you?" rows="3"></textarea>
+                                    id="message" placeholder="How can we help you?" rows="3" required></textarea>
                             </div>
                             <div class="pt-md">
                                 <button
@@ -1478,9 +1476,7 @@
                 <!-- Brand Column -->
                 <div class="space-y-sm lg:col-span-4">
                     <div class="flex items-center gap-4">
-                        <img alt="VKT Logistics" class="h-10 w-auto object-contain" src="assets/logo_emblem.png" />
-                        <span class="font-headline-md text-headline-md font-bold text-primary tracking-tight">VKT
-                            LOGISTICS LLP</span>
+                        <img alt="VKT Logistics LLP" class="h-12 w-auto object-contain" src="assets/logo_transparent_trimmed.png" />
                     </div>
                     <p class="text-primary font-bold text-xs uppercase tracking-wider">Moving India. Growing Together.
                     </p>
@@ -1557,29 +1553,26 @@
                         <div class="absolute bottom-0 left-0 w-8 h-[2px] bg-primary"></div>
                     </div>
                     <div class="flex flex-col gap-3 pt-2">
-                        <div class="text-secondary text-sm flex items-center gap-2">
-                            <span
-                                class="material-symbols-outlined text-base text-primary-container">local_shipping</span>
-                            <span>Industrial Freight & Cargo</span>
-                        </div>
-                        <div class="text-secondary text-sm flex items-center gap-2">
-                            <span
-                                class="material-symbols-outlined text-base text-primary-container">airport_shuttle</span>
-                            <span>Corporate Employee Mobility</span>
-                        </div>
-                        <div class="text-secondary text-sm flex items-center gap-2">
-                            <span
-                                class="material-symbols-outlined text-base text-primary-container">directions_bus</span>
-                            <span>Premium Fleet Solutions</span>
-                        </div>
-                        <div class="text-secondary text-sm flex items-center gap-2">
+                        <a href="logistics.html" class="text-secondary hover:text-primary transition-all text-sm flex items-center gap-2 group">
+                            <span class="material-symbols-outlined text-base text-primary-container">local_shipping</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Industrial Freight & Cargo</span>
+                        </a>
+                        <a href="services.html#corporate" class="text-secondary hover:text-primary transition-all text-sm flex items-center gap-2 group">
+                            <span class="material-symbols-outlined text-base text-primary-container">airport_shuttle</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Corporate Employee Mobility</span>
+                        </a>
+                        <a href="services.html" class="text-secondary hover:text-primary transition-all text-sm flex items-center gap-2 group">
+                            <span class="material-symbols-outlined text-base text-primary-container">directions_bus</span>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Premium Fleet Solutions</span>
+                        </a>
+                        <a href="holidays.html" class="text-secondary hover:text-primary transition-all text-sm flex items-center gap-2 group">
                             <span class="material-symbols-outlined text-base text-primary-container">explore</span>
-                            <span>Predator Holidays (Leisure)</span>
-                        </div>
-                        <div class="text-secondary text-sm flex items-center gap-2">
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Predator Holidays (Leisure)</span>
+                        </a>
+                        <a href="logistics.html#warehouse" class="text-secondary hover:text-primary transition-all text-sm flex items-center gap-2 group">
                             <span class="material-symbols-outlined text-base text-primary-container">domain</span>
-                            <span>Warehouse Management</span>
-                        </div>
+                            <span class="group-hover:translate-x-1 transition-all duration-300">Warehouse Management</span>
+                        </a>
                     </div>
                 </div>
 
@@ -1650,7 +1643,12 @@
     <!-- Premium WhatsApp Floating Button -->
     <a href="https://wa.me/917356697973"
         class="whatsapp-float group flex items-center" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
-        <div class="flex items-center gap-3 bg-gradient-to-r from-[#25D366] to-[#128C7E] text-white px-5 py-3 rounded-full shadow-[0_8px_30px_rgb(37,211,102,0.4)] hover:shadow-[0_12px_40px_rgb(37,211,102,0.6)] transition-all duration-300 transform group-hover:-translate-y-1 border border-white/20 backdrop-blur-sm">
+        <!-- Mobile View (Circle Icon Only) -->
+        <div class="md:hidden relative flex items-center justify-center w-16 h-16 transition-all duration-300 transform hover:scale-110">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-16 h-16 relative z-10 drop-shadow-lg" />
+        </div>
+        <!-- Desktop View (Original Pill Button) -->
+        <div class="hidden md:flex items-center gap-3 bg-gradient-to-r from-[#25D366] to-[#128C7E] text-white px-5 py-3 rounded-full shadow-[0_8px_30px_rgb(37,211,102,0.4)] hover:shadow-[0_12px_40px_rgb(37,211,102,0.6)] transition-all duration-300 transform group-hover:-translate-y-1 border border-white/20 backdrop-blur-sm">
             <div class="relative flex items-center justify-center">
                 <div class="absolute inset-0 bg-white rounded-full opacity-0 group-hover:animate-ping"></div>
                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-6 h-6 relative z-10 drop-shadow" />
