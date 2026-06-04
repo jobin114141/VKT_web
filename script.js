@@ -373,7 +373,7 @@ window.handleContactSubmit = function(event) {
     });
 
     // Open mailto link
-    const mailtoLink = `mailto:vktlogisticsllp@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const mailtoLink = `mailto:info@vktlogistics.co.in?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.location.href = mailtoLink;
     
     form.reset();
